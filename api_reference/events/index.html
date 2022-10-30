@@ -12,7 +12,7 @@
         <meta name="author" content="sarth">
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../../assets/wyvern.png">
       <meta name="generator" content="mkdocs-1.4.1, mkdocs-material-8.5.7">
     
     
@@ -36,8 +36,8 @@
         
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
-        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Ubuntu";--md-code-font:"Roboto Mono"}</style>
       
     
     
@@ -81,6 +81,10 @@
       
     </div>
     
+      <div data-md-component="outdated" hidden>
+        
+      </div>
+    
     
       
 
@@ -88,8 +92,7 @@
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="../.." title="wyvern" class="md-header__button md-logo" aria-label="wyvern" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <img src="../../assets/wyvern.png" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
@@ -191,6 +194,45 @@
       
         
           
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-tabs__inner md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+
+
+  <li class="md-tabs__item">
+    <a href="../.." class="md-tabs__link">
+      Getting Started
+    </a>
+  </li>
+
+      
+        
+  
+  
+    
+  
+
+
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../client/" class="md-tabs__link md-tabs__link--active">
+        API Reference
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
         
       
       <main class="md-main" data-md-component="main">
@@ -203,13 +245,16 @@
                   <div class="md-sidebar__inner">
                     
 
+  
 
-<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="wyvern" class="md-nav__button md-logo" aria-label="wyvern" data-md-component="logo">
       
-  
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+  <img src="../../assets/wyvern.png" alt="logo">
 
     </a>
     wyvern
@@ -364,29 +409,29 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#wyvern.events.EventHandler.dispatch" class="md-nav__link">
-    dispatch()
+  <a href="#wyvern.events.EventHandler.add_listener" class="md-nav__link">
+    add_listener()
   </a>
   
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#wyvern.events.EventHandler.listen" class="md-nav__link">
-    listen()
-  </a>
-  
-    <nav class="md-nav" aria-label="listen()">
+    <nav class="md-nav" aria-label="add_listener()">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#wyvern.events.EventHandler.listen--example" class="md-nav__link">
-    Example
+  <a href="#wyvern.events.EventHandler.add_listener--arguments" class="md-nav__link">
+    Arguments
   </a>
   
 </li>
         
       </ul>
     </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wyvern.events.EventHandler.dispatch" class="md-nav__link">
+    dispatch()
+  </a>
   
 </li>
         
@@ -479,6 +524,67 @@
 
             
           
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_6" type="checkbox" id="__nav_2_6" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_6">
+          models
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="models" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_6">
+          <span class="md-nav__icon md-icon"></span>
+          models
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../models/base/" class="md-nav__link">
+        base
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../models/message/" class="md-nav__link">
+        message
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -491,100 +597,6 @@
                 </div>
               </div>
             
-            
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#wyvern.events" class="md-nav__link">
-    wyvern.events
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#wyvern.events.Event" class="md-nav__link">
-    Event
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#wyvern.events.EventHandler" class="md-nav__link">
-    EventHandler
-  </a>
-  
-    <nav class="md-nav" aria-label="EventHandler">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#wyvern.events.EventHandler.dispatch" class="md-nav__link">
-    dispatch()
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#wyvern.events.EventHandler.listen" class="md-nav__link">
-    listen()
-  </a>
-  
-    <nav class="md-nav" aria-label="listen()">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#wyvern.events.EventHandler.listen--example" class="md-nav__link">
-    Example
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#wyvern.events.EventListener" class="md-nav__link">
-    EventListener
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#wyvern.events.listener" class="md-nav__link">
-    listener()
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
             
           
           
@@ -638,10 +650,10 @@
 
         <details class="quote">
           <summary>Source code in <code>wyvern/events.py</code></summary>
-          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">14</span>
-<span class="normal">15</span>
-<span class="normal">16</span>
-<span class="normal">17</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">Event</span><span class="p">:</span>
+          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">Event</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;Event Enums.&quot;&quot;&quot;</span>
 
     <span class="n">MESSAGE_CREATE</span> <span class="o">=</span> <span class="s2">&quot;MESSAGE_CREATE&quot;</span>
@@ -731,7 +743,9 @@
 
         <details class="quote">
           <summary>Source code in <code>wyvern/events.py</code></summary>
-          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 53</span>
+          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 51</span>
+<span class="normal"> 52</span>
+<span class="normal"> 53</span>
 <span class="normal"> 54</span>
 <span class="normal"> 55</span>
 <span class="normal"> 56</span>
@@ -794,30 +808,7 @@
 <span class="normal">113</span>
 <span class="normal">114</span>
 <span class="normal">115</span>
-<span class="normal">116</span>
-<span class="normal">117</span>
-<span class="normal">118</span>
-<span class="normal">119</span>
-<span class="normal">120</span>
-<span class="normal">121</span>
-<span class="normal">122</span>
-<span class="normal">123</span>
-<span class="normal">124</span>
-<span class="normal">125</span>
-<span class="normal">126</span>
-<span class="normal">127</span>
-<span class="normal">128</span>
-<span class="normal">129</span>
-<span class="normal">130</span>
-<span class="normal">131</span>
-<span class="normal">132</span>
-<span class="normal">133</span>
-<span class="normal">134</span>
-<span class="normal">135</span>
-<span class="normal">136</span>
-<span class="normal">137</span>
-<span class="normal">138</span>
-<span class="normal">139</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">EventHandler</span><span class="p">:</span>
+<span class="normal">116</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">EventHandler</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Event handler to deal with incoming events from the Gateway.</span>
 
@@ -848,40 +839,19 @@
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">client</span><span class="p">:</span> <span class="s2">&quot;GatewayClient&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">client</span> <span class="o">=</span> <span class="n">client</span>
 
-    <span class="k">def</span> <span class="nf">listen</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">typing</span><span class="o">.</span><span class="n">Callable</span><span class="p">[[</span><span class="n">EventListener</span><span class="p">],</span> <span class="n">EventListener</span><span class="p">]:</span>
+    <span class="k">def</span> <span class="nf">add_listener</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event_listener</span><span class="p">:</span> <span class="n">EventListener</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
         <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        This decorator adds a listener object to the handler&#39;s container</span>
+<span class="sd">        Adds a listener to the handler.</span>
 
-<span class="sd">        Example</span>
-<span class="sd">        -------</span>
+<span class="sd">        Arguments</span>
+<span class="sd">        ---------</span>
 
-<span class="sd">            &gt;&gt;&gt; import wyvern</span>
-<span class="sd">            &gt;&gt;&gt;</span>
-<span class="sd">            &gt;&gt;&gt; client = wyvern.GatewayClient(&quot;TOKEN&quot;)</span>
-<span class="sd">            &gt;&gt;&gt;</span>
-<span class="sd">            &gt;&gt;&gt; @client.event_handler.listen()</span>
-<span class="sd">            &gt;&gt;&gt; @wyvern.listener(wyvern.Event.MESSAGE_CREATE)</span>
-<span class="sd">            &gt;&gt;&gt; async def message_create(message: wyvern.Message) -&gt; None:</span>
-<span class="sd">            &gt;&gt;&gt;     ...</span>
-<span class="sd">            &gt;&gt;&gt;</span>
-<span class="sd">            &gt;&gt;&gt; client.run()</span>
-
-<span class="sd">        Returns</span>
-<span class="sd">        -------</span>
-<span class="sd">        wyvern.events.EventListener</span>
-<span class="sd">            The listener that was created using @listener decorator.</span>
+<span class="sd">        event_listener: wyvern.events.EventListener</span>
+<span class="sd">            The listener to be added.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">listeners</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">event_listener</span><span class="o">.</span><span class="n">event_type</span><span class="p">,</span> <span class="p">[])</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">event_listener</span><span class="p">)</span>
 
-        <span class="k">def</span> <span class="nf">inner</span><span class="p">(</span><span class="n">listener_obj</span><span class="p">:</span> <span class="n">EventListener</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">EventListener</span><span class="p">:</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">add_listener</span><span class="p">(</span><span class="n">listener_obj</span><span class="p">)</span>
-            <span class="k">return</span> <span class="n">listener_obj</span>
-
-        <span class="k">return</span> <span class="n">inner</span>
-
-    <span class="k">def</span> <span class="nf">add_listener</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">listener</span><span class="p">:</span> <span class="n">EventListener</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">listeners</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">listener</span><span class="o">.</span><span class="n">event_type</span><span class="p">,</span> <span class="p">[])</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">listener</span><span class="p">)</span>
-
-    <span class="k">def</span> <span class="nf">dispatch</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">dispatch</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Event</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Dispatches events from the gateway.</span>
 <span class="sd">        This method runs all the listeners registered in the container</span>
@@ -890,7 +860,7 @@
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
 
-<span class="sd">        event: str</span>
+<span class="sd">        event: str | wyvern.events.Event</span>
 <span class="sd">            Name of the event to be dispatched.</span>
 <span class="sd">        *args: tuple[typing.Any, ...]</span>
 <span class="sd">            Arguments to provide in callbacks.</span>
@@ -899,9 +869,9 @@
 <span class="sd">        &quot;&quot;&quot;</span>
 
         <span class="n">invokes</span> <span class="o">=</span> <span class="p">[</span>
-            <span class="p">(</span><span class="n">listener</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">)</span> <span class="k">if</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">listener</span><span class="o">.</span><span class="n">callback</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">))</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="k">else</span> <span class="n">listener</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">))</span>
-            <span class="k">for</span> <span class="n">listener</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">listeners</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">event</span><span class="p">,</span> <span class="p">[])</span>
-            <span class="k">if</span> <span class="n">listener</span><span class="o">.</span><span class="n">max_trigger</span> <span class="o">&gt;</span> <span class="n">listener</span><span class="o">.</span><span class="n">trigger_count</span>
+            <span class="p">(</span><span class="n">lsnr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">)</span> <span class="k">if</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">lsnr</span><span class="o">.</span><span class="n">callback</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">))</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="k">else</span> <span class="n">lsnr</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">))</span>
+            <span class="k">for</span> <span class="n">lsnr</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">listeners</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">event</span><span class="p">,</span> <span class="p">[])</span>
+            <span class="k">if</span> <span class="n">lsnr</span><span class="o">.</span><span class="n">max_trigger</span> <span class="o">&gt;</span> <span class="n">lsnr</span><span class="o">.</span><span class="n">trigger_count</span>
         <span class="p">]</span>
         <span class="n">asyncio</span><span class="o">.</span><span class="n">gather</span><span class="p">(</span><span class="o">*</span><span class="n">invokes</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
@@ -918,6 +888,52 @@
 
 
 
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="wyvern.events.EventHandler.add_listener" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">add_listener</span><span class="p">(</span><span class="n">event_listener</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Adds a listener to the handler.</p>
+<h5 id="wyvern.events.EventHandler.add_listener--arguments">Arguments</h5>
+<p>event_listener: wyvern.events.EventListener
+    The listener to be added.</p>
+
+      <details class="quote">
+        <summary>Source code in <code>wyvern/events.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">82</span>
+<span class="normal">83</span>
+<span class="normal">84</span>
+<span class="normal">85</span>
+<span class="normal">86</span>
+<span class="normal">87</span>
+<span class="normal">88</span>
+<span class="normal">89</span>
+<span class="normal">90</span>
+<span class="normal">91</span>
+<span class="normal">92</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">add_listener</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event_listener</span><span class="p">:</span> <span class="n">EventListener</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Adds a listener to the handler.</span>
+
+<span class="sd">    Arguments</span>
+<span class="sd">    ---------</span>
+
+<span class="sd">    event_listener: wyvern.events.EventListener</span>
+<span class="sd">        The listener to be added.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">listeners</span><span class="o">.</span><span class="n">setdefault</span><span class="p">(</span><span class="n">event_listener</span><span class="o">.</span><span class="n">event_type</span><span class="p">,</span> <span class="p">[])</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">event_listener</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
 
 <div class="doc doc-object doc-function">
 
@@ -949,7 +965,7 @@ for the specific event.</p>
         <tr>
           <td><code>event</code></td>
           <td>
-                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.9/library/stdtypes.html#str">str</a></code>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.9/library/stdtypes.html#str">str</a> | <a class="autorefs autorefs-internal" title="wyvern.events.Event" href="#wyvern.events.Event">Event</a></code>
           </td>
           <td><p>Name of the event to be dispatched.</p></td>
           <td>
@@ -971,114 +987,7 @@ for the specific event.</p>
 
       <details class="quote">
         <summary>Source code in <code>wyvern/events.py</code></summary>
-        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">117</span>
-<span class="normal">118</span>
-<span class="normal">119</span>
-<span class="normal">120</span>
-<span class="normal">121</span>
-<span class="normal">122</span>
-<span class="normal">123</span>
-<span class="normal">124</span>
-<span class="normal">125</span>
-<span class="normal">126</span>
-<span class="normal">127</span>
-<span class="normal">128</span>
-<span class="normal">129</span>
-<span class="normal">130</span>
-<span class="normal">131</span>
-<span class="normal">132</span>
-<span class="normal">133</span>
-<span class="normal">134</span>
-<span class="normal">135</span>
-<span class="normal">136</span>
-<span class="normal">137</span>
-<span class="normal">138</span>
-<span class="normal">139</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">dispatch</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Dispatches events from the gateway.</span>
-<span class="sd">    This method runs all the listeners registered in the container</span>
-<span class="sd">    for the specific event.</span>
-
-<span class="sd">    Parameters</span>
-<span class="sd">    ----------</span>
-
-<span class="sd">    event: str</span>
-<span class="sd">        Name of the event to be dispatched.</span>
-<span class="sd">    *args: tuple[typing.Any, ...]</span>
-<span class="sd">        Arguments to provide in callbacks.</span>
-
-
-<span class="sd">    &quot;&quot;&quot;</span>
-
-    <span class="n">invokes</span> <span class="o">=</span> <span class="p">[</span>
-        <span class="p">(</span><span class="n">listener</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">)</span> <span class="k">if</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">listener</span><span class="o">.</span><span class="n">callback</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">))</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="k">else</span> <span class="n">listener</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">))</span>
-        <span class="k">for</span> <span class="n">listener</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">listeners</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">event</span><span class="p">,</span> <span class="p">[])</span>
-        <span class="k">if</span> <span class="n">listener</span><span class="o">.</span><span class="n">max_trigger</span> <span class="o">&gt;</span> <span class="n">listener</span><span class="o">.</span><span class="n">trigger_count</span>
-    <span class="p">]</span>
-    <span class="n">asyncio</span><span class="o">.</span><span class="n">gather</span><span class="p">(</span><span class="o">*</span><span class="n">invokes</span><span class="p">)</span>
-</code></pre></div></td></tr></table></div>
-      </details>
-  </div>
-
-</div>
-
-<div class="doc doc-object doc-function">
-
-
-
-<h3 id="wyvern.events.EventHandler.listen" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">listen</span><span class="p">()</span></code>
-
-</h3>
-
-
-  <div class="doc doc-contents ">
-  
-      <p>This decorator adds a listener object to the handler's container</p>
-<h5 id="wyvern.events.EventHandler.listen--example">Example</h5>
-<pre><code>&gt;&gt;&gt; import wyvern
-&gt;&gt;&gt;
-&gt;&gt;&gt; client = wyvern.GatewayClient("TOKEN")
-&gt;&gt;&gt;
-&gt;&gt;&gt; @client.event_handler.listen()
-&gt;&gt;&gt; @wyvern.listener(wyvern.Event.MESSAGE_CREATE)
-&gt;&gt;&gt; async def message_create(message: wyvern.Message) -&gt; None:
-&gt;&gt;&gt;     ...
-&gt;&gt;&gt;
-&gt;&gt;&gt; client.run()
-</code></pre>
-
-  <p><strong>Returns:</strong></p>
-  <table>
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-        <tr>
-          <td>
-                <code>wyvern.<a class="autorefs autorefs-internal" title="wyvern.events" href="#wyvern.events">events</a>.<a class="autorefs autorefs-internal" title="wyvern.events.EventListener" href="#wyvern.events.EventListener">EventListener</a></code>
-          </td>
-          <td><p>The listener that was created using @listener decorator.</p></td>
-        </tr>
-    </tbody>
-  </table>
-
-      <details class="quote">
-        <summary>Source code in <code>wyvern/events.py</code></summary>
-        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 84</span>
-<span class="normal"> 85</span>
-<span class="normal"> 86</span>
-<span class="normal"> 87</span>
-<span class="normal"> 88</span>
-<span class="normal"> 89</span>
-<span class="normal"> 90</span>
-<span class="normal"> 91</span>
-<span class="normal"> 92</span>
-<span class="normal"> 93</span>
-<span class="normal"> 94</span>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 94</span>
 <span class="normal"> 95</span>
 <span class="normal"> 96</span>
 <span class="normal"> 97</span>
@@ -1096,35 +1005,33 @@ for the specific event.</p>
 <span class="normal">109</span>
 <span class="normal">110</span>
 <span class="normal">111</span>
-<span class="normal">112</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">listen</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">typing</span><span class="o">.</span><span class="n">Callable</span><span class="p">[[</span><span class="n">EventListener</span><span class="p">],</span> <span class="n">EventListener</span><span class="p">]:</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">dispatch</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Event</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    This decorator adds a listener object to the handler&#39;s container</span>
+<span class="sd">    Dispatches events from the gateway.</span>
+<span class="sd">    This method runs all the listeners registered in the container</span>
+<span class="sd">    for the specific event.</span>
 
-<span class="sd">    Example</span>
-<span class="sd">    -------</span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
 
-<span class="sd">        &gt;&gt;&gt; import wyvern</span>
-<span class="sd">        &gt;&gt;&gt;</span>
-<span class="sd">        &gt;&gt;&gt; client = wyvern.GatewayClient(&quot;TOKEN&quot;)</span>
-<span class="sd">        &gt;&gt;&gt;</span>
-<span class="sd">        &gt;&gt;&gt; @client.event_handler.listen()</span>
-<span class="sd">        &gt;&gt;&gt; @wyvern.listener(wyvern.Event.MESSAGE_CREATE)</span>
-<span class="sd">        &gt;&gt;&gt; async def message_create(message: wyvern.Message) -&gt; None:</span>
-<span class="sd">        &gt;&gt;&gt;     ...</span>
-<span class="sd">        &gt;&gt;&gt;</span>
-<span class="sd">        &gt;&gt;&gt; client.run()</span>
+<span class="sd">    event: str | wyvern.events.Event</span>
+<span class="sd">        Name of the event to be dispatched.</span>
+<span class="sd">    *args: tuple[typing.Any, ...]</span>
+<span class="sd">        Arguments to provide in callbacks.</span>
 
-<span class="sd">    Returns</span>
-<span class="sd">    -------</span>
-<span class="sd">    wyvern.events.EventListener</span>
-<span class="sd">        The listener that was created using @listener decorator.</span>
+
 <span class="sd">    &quot;&quot;&quot;</span>
 
-    <span class="k">def</span> <span class="nf">inner</span><span class="p">(</span><span class="n">listener_obj</span><span class="p">:</span> <span class="n">EventListener</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">EventListener</span><span class="p">:</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">add_listener</span><span class="p">(</span><span class="n">listener_obj</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">listener_obj</span>
-
-    <span class="k">return</span> <span class="n">inner</span>
+    <span class="n">invokes</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="p">(</span><span class="n">lsnr</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">)</span> <span class="k">if</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">lsnr</span><span class="o">.</span><span class="n">callback</span><span class="p">)</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">))</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="k">else</span> <span class="n">lsnr</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">))</span>
+        <span class="k">for</span> <span class="n">lsnr</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">listeners</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">event</span><span class="p">,</span> <span class="p">[])</span>
+        <span class="k">if</span> <span class="n">lsnr</span><span class="o">.</span><span class="n">max_trigger</span> <span class="o">&gt;</span> <span class="n">lsnr</span><span class="o">.</span><span class="n">trigger_count</span>
+    <span class="p">]</span>
+    <span class="n">asyncio</span><span class="o">.</span><span class="n">gather</span><span class="p">(</span><span class="o">*</span><span class="n">invokes</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
       </details>
   </div>
@@ -1223,7 +1130,9 @@ dispatched.</p>
 
         <details class="quote">
           <summary>Source code in <code>wyvern/events.py</code></summary>
-          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">20</span>
+          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
 <span class="normal">21</span>
 <span class="normal">22</span>
 <span class="normal">23</span>
@@ -1251,9 +1160,7 @@ dispatched.</p>
 <span class="normal">45</span>
 <span class="normal">46</span>
 <span class="normal">47</span>
-<span class="normal">48</span>
-<span class="normal">49</span>
-<span class="normal">50</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@attrs</span><span class="o">.</span><span class="n">define</span>
+<span class="normal">48</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nd">@attrs</span><span class="o">.</span><span class="n">define</span>
 <span class="k">class</span> <span class="nc">EventListener</span><span class="p">:</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Class representating a callable to be called when a specific event type is</span>
@@ -1376,32 +1283,32 @@ dispatched.</p>
 
       <details class="quote">
         <summary>Source code in <code>wyvern/events.py</code></summary>
-        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">142</span>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span>
+<span class="normal">122</span>
+<span class="normal">123</span>
+<span class="normal">124</span>
+<span class="normal">125</span>
+<span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span>
+<span class="normal">140</span>
+<span class="normal">141</span>
+<span class="normal">142</span>
 <span class="normal">143</span>
-<span class="normal">144</span>
-<span class="normal">145</span>
-<span class="normal">146</span>
-<span class="normal">147</span>
-<span class="normal">148</span>
-<span class="normal">149</span>
-<span class="normal">150</span>
-<span class="normal">151</span>
-<span class="normal">152</span>
-<span class="normal">153</span>
-<span class="normal">154</span>
-<span class="normal">155</span>
-<span class="normal">156</span>
-<span class="normal">157</span>
-<span class="normal">158</span>
-<span class="normal">159</span>
-<span class="normal">160</span>
-<span class="normal">161</span>
-<span class="normal">162</span>
-<span class="normal">163</span>
-<span class="normal">164</span>
-<span class="normal">165</span>
-<span class="normal">166</span>
-<span class="normal">167</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">listener</span><span class="p">(</span>
+<span class="normal">144</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">listener</span><span class="p">(</span>
     <span class="n">event</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">Event</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">max_trigger</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="s2">&quot;inf&quot;</span><span class="p">)</span>
 <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">typing</span><span class="o">.</span><span class="n">Callable</span><span class="p">[[</span><span class="n">typing</span><span class="o">.</span><span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">typing</span><span class="o">.</span><span class="n">Awaitable</span><span class="p">[</span><span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">]]],</span> <span class="n">EventListener</span><span class="p">]:</span>
     <span class="sd">&quot;&quot;&quot;Creates a [wyvern.events.EventListener][] object.</span>
@@ -1451,6 +1358,11 @@ dispatched.</p>
           
           
         </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
         
       </main>
       
@@ -1536,7 +1448,7 @@ dispatched.</p>
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.top", "toc.integrate"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": "0.0.1a"}</script>
     
     
       <script src="../../assets/javascripts/bundle.8492ddcf.min.js"></script>

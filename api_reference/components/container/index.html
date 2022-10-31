@@ -477,13 +477,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#wyvern.components.container.ActionRowContainer.type" class="md-nav__link">
-    type
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#wyvern.components.container.ActionRowContainer.add_button" class="md-nav__link">
     add_button()
   </a>
@@ -494,13 +487,6 @@
           <li class="md-nav__item">
   <a href="#wyvern.components.container.ActionRowContainer.add_button--arguments" class="md-nav__link">
     Arguments
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#wyvern.components.container.ActionRowContainer.add_button--returns" class="md-nav__link">
-    Returns
   </a>
   
 </li>
@@ -612,7 +598,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../docs/api_reference/presences.md" class="md-nav__link">
+      <a href="../../presences/" class="md-nav__link">
         presences
       </a>
     </li>
@@ -787,11 +773,11 @@
 
 <div class="doc doc-object doc-module">
 
+
 <a id="wyvern.components.container"></a>
-    <div class="doc doc-contents first">
+  <div class="doc doc-contents first">
 
-
-
+  
 
   <div class="doc doc-children">
 
@@ -802,94 +788,159 @@
 
 
 
-  <div class="doc doc-object doc-class">
+<div class="doc doc-object doc-class">
 
 
 
 <h2 id="wyvern.components.container.ActionRowContainer" class="doc doc-heading">
-        <code>
-ActionRowContainer            (<a class="autorefs autorefs-internal" title="wyvern.components.base.Component" href="../base/#wyvern.components.base.Component">Component</a>)
-        </code>
-
+        <code>ActionRowContainer</code>
 
 
 </h2>
 
-    <div class="doc doc-contents ">
 
+  <div class="doc doc-contents ">
+      <p class="doc doc-class-bases">
+        Bases: <code><a class="autorefs autorefs-internal" title="wyvern.components.base.Component" href="../base/#wyvern.components.base.Component">Component</a></code></p>
+
+  
       <p>Interface to create an Action Row.
 This class accepts and stores. other discord components.</p>
 
+
         <details class="quote">
           <summary>Source code in <code>wyvern/components/container.py</code></summary>
-          <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">class</span> <span class="nc">ActionRowContainer</span><span class="p">(</span><span class="n">Component</span><span class="p">):</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="sd">&quot;&quot;&quot;Interface to create an Action Row.</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="sd">    This class accepts and stores. other discord components.</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="sd">    &quot;&quot;&quot;</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="nb">type</span> <span class="o">=</span> <span class="n">ComponentType</span><span class="o">.</span><span class="n">ACTION_ROW</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="n">items</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Component</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="sd">&quot;&quot;&quot;List of items stored in the container.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">items</span><span class="p">:</span> <span class="n">Component</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">items</span><span class="p">:</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">items</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>    <span class="k">def</span> <span class="nf">to_payload</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">]:</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>        <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">type</span><span class="p">),</span> <span class="s2">&quot;components&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">item</span><span class="o">.</span><span class="n">to_payload</span><span class="p">()</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">items</span><span class="p">]}</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>    <span class="k">def</span> <span class="nf">add_button</span><span class="p">(</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>        <span class="bp">self</span><span class="p">,</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>        <span class="o">*</span><span class="p">,</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>        <span class="n">style</span><span class="p">:</span> <span class="n">ButtonStyle</span> <span class="o">=</span> <span class="n">ButtonStyle</span><span class="o">.</span><span class="n">SECONDARY</span><span class="p">,</span>
-<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>        <span class="n">label</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>        <span class="n">emoji</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="s2">&quot;CustomEmoji&quot;</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>        <span class="n">custom_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>        <span class="n">disabled</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
-<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>        <span class="n">url</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Button</span><span class="p">:</span>
-<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>        <span class="sd">&quot;&quot;&quot;Adds a button to the container.</span>
-<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>
-<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="sd">        Arguments</span>
-<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a><span class="sd">        ---------</span>
-<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>
-<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="sd">        style : wyvern.components.base.ButtonStyle</span>
-<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a><span class="sd">            The style of button.</span>
-<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="sd">        label : str | None</span>
-<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a><span class="sd">            Button&#39;s label.</span>
-<a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a><span class="sd">        emoji : str | wyvern.models.emojis.CustomEmoji</span>
-<a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a><span class="sd">            A unicode emoji or a custom one.</span>
-<a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a><span class="sd">        custom_id : str</span>
-<a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a><span class="sd">            A custom id set to the button.</span>
-<a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a><span class="sd">        disabled : bool</span>
-<a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a><span class="sd">            Set this to [True][] to disable clicks on button.</span>
-<a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a><span class="sd">        url : str</span>
-<a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a><span class="sd">            The URL this button points to.</span>
-<a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a>
-<a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a><span class="sd">        Returns</span>
-<a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a><span class="sd">        -------</span>
-<a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a>
-<a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a><span class="sd">        wyvern.components.buttons.Button</span>
-<a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a><span class="sd">            The button that was created.</span>
-<a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a>
-<a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a><span class="sd">        &quot;&quot;&quot;</span>
-<a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">items</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
-<a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a>            <span class="n">button</span> <span class="o">:=</span> <span class="n">Button</span><span class="p">(</span>
-<a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a>                <span class="nb">type</span><span class="o">=</span><span class="n">ComponentType</span><span class="o">.</span><span class="n">BUTTON</span><span class="p">,</span>
-<a id="__codelineno-0-56" name="__codelineno-0-56" href="#__codelineno-0-56"></a>                <span class="n">style</span><span class="o">=</span><span class="n">style</span><span class="p">,</span>
-<a id="__codelineno-0-57" name="__codelineno-0-57" href="#__codelineno-0-57"></a>                <span class="n">label</span><span class="o">=</span><span class="n">label</span><span class="p">,</span>
-<a id="__codelineno-0-58" name="__codelineno-0-58" href="#__codelineno-0-58"></a>                <span class="n">emoji</span><span class="o">=</span><span class="n">emoji</span><span class="p">,</span>
-<a id="__codelineno-0-59" name="__codelineno-0-59" href="#__codelineno-0-59"></a>                <span class="n">custom_id</span><span class="o">=</span><span class="n">custom_id</span><span class="p">,</span>
-<a id="__codelineno-0-60" name="__codelineno-0-60" href="#__codelineno-0-60"></a>                <span class="n">disabled</span><span class="o">=</span><span class="n">disabled</span><span class="p">,</span>
-<a id="__codelineno-0-61" name="__codelineno-0-61" href="#__codelineno-0-61"></a>                <span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span>
-<a id="__codelineno-0-62" name="__codelineno-0-62" href="#__codelineno-0-62"></a>            <span class="p">)</span>
-<a id="__codelineno-0-63" name="__codelineno-0-63" href="#__codelineno-0-63"></a>        <span class="p">)</span>
-<a id="__codelineno-0-64" name="__codelineno-0-64" href="#__codelineno-0-64"></a>        <span class="k">return</span> <span class="n">button</span>
-</code></pre></div>
+          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-37"> 37</a></span>
+<span class="normal"><a href="#__codelineno-0-38"> 38</a></span>
+<span class="normal"><a href="#__codelineno-0-39"> 39</a></span>
+<span class="normal"><a href="#__codelineno-0-40"> 40</a></span>
+<span class="normal"><a href="#__codelineno-0-41"> 41</a></span>
+<span class="normal"><a href="#__codelineno-0-42"> 42</a></span>
+<span class="normal"><a href="#__codelineno-0-43"> 43</a></span>
+<span class="normal"><a href="#__codelineno-0-44"> 44</a></span>
+<span class="normal"><a href="#__codelineno-0-45"> 45</a></span>
+<span class="normal"><a href="#__codelineno-0-46"> 46</a></span>
+<span class="normal"><a href="#__codelineno-0-47"> 47</a></span>
+<span class="normal"><a href="#__codelineno-0-48"> 48</a></span>
+<span class="normal"><a href="#__codelineno-0-49"> 49</a></span>
+<span class="normal"><a href="#__codelineno-0-50"> 50</a></span>
+<span class="normal"><a href="#__codelineno-0-51"> 51</a></span>
+<span class="normal"><a href="#__codelineno-0-52"> 52</a></span>
+<span class="normal"><a href="#__codelineno-0-53"> 53</a></span>
+<span class="normal"><a href="#__codelineno-0-54"> 54</a></span>
+<span class="normal"><a href="#__codelineno-0-55"> 55</a></span>
+<span class="normal"><a href="#__codelineno-0-56"> 56</a></span>
+<span class="normal"><a href="#__codelineno-0-57"> 57</a></span>
+<span class="normal"><a href="#__codelineno-0-58"> 58</a></span>
+<span class="normal"><a href="#__codelineno-0-59"> 59</a></span>
+<span class="normal"><a href="#__codelineno-0-60"> 60</a></span>
+<span class="normal"><a href="#__codelineno-0-61"> 61</a></span>
+<span class="normal"><a href="#__codelineno-0-62"> 62</a></span>
+<span class="normal"><a href="#__codelineno-0-63"> 63</a></span>
+<span class="normal"><a href="#__codelineno-0-64"> 64</a></span>
+<span class="normal"><a href="#__codelineno-0-65"> 65</a></span>
+<span class="normal"><a href="#__codelineno-0-66"> 66</a></span>
+<span class="normal"><a href="#__codelineno-0-67"> 67</a></span>
+<span class="normal"><a href="#__codelineno-0-68"> 68</a></span>
+<span class="normal"><a href="#__codelineno-0-69"> 69</a></span>
+<span class="normal"><a href="#__codelineno-0-70"> 70</a></span>
+<span class="normal"><a href="#__codelineno-0-71"> 71</a></span>
+<span class="normal"><a href="#__codelineno-0-72"> 72</a></span>
+<span class="normal"><a href="#__codelineno-0-73"> 73</a></span>
+<span class="normal"><a href="#__codelineno-0-74"> 74</a></span>
+<span class="normal"><a href="#__codelineno-0-75"> 75</a></span>
+<span class="normal"><a href="#__codelineno-0-76"> 76</a></span>
+<span class="normal"><a href="#__codelineno-0-77"> 77</a></span>
+<span class="normal"><a href="#__codelineno-0-78"> 78</a></span>
+<span class="normal"><a href="#__codelineno-0-79"> 79</a></span>
+<span class="normal"><a href="#__codelineno-0-80"> 80</a></span>
+<span class="normal"><a href="#__codelineno-0-81"> 81</a></span>
+<span class="normal"><a href="#__codelineno-0-82"> 82</a></span>
+<span class="normal"><a href="#__codelineno-0-83"> 83</a></span>
+<span class="normal"><a href="#__codelineno-0-84"> 84</a></span>
+<span class="normal"><a href="#__codelineno-0-85"> 85</a></span>
+<span class="normal"><a href="#__codelineno-0-86"> 86</a></span>
+<span class="normal"><a href="#__codelineno-0-87"> 87</a></span>
+<span class="normal"><a href="#__codelineno-0-88"> 88</a></span>
+<span class="normal"><a href="#__codelineno-0-89"> 89</a></span>
+<span class="normal"><a href="#__codelineno-0-90"> 90</a></span>
+<span class="normal"><a href="#__codelineno-0-91"> 91</a></span>
+<span class="normal"><a href="#__codelineno-0-92"> 92</a></span>
+<span class="normal"><a href="#__codelineno-0-93"> 93</a></span>
+<span class="normal"><a href="#__codelineno-0-94"> 94</a></span>
+<span class="normal"><a href="#__codelineno-0-95"> 95</a></span>
+<span class="normal"><a href="#__codelineno-0-96"> 96</a></span>
+<span class="normal"><a href="#__codelineno-0-97"> 97</a></span>
+<span class="normal"><a href="#__codelineno-0-98"> 98</a></span>
+<span class="normal"><a href="#__codelineno-0-99"> 99</a></span>
+<span class="normal"><a href="#__codelineno-0-100">100</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-37" name="__codelineno-0-37"></a><span class="k">class</span> <span class="nc">ActionRowContainer</span><span class="p">(</span><span class="n">Component</span><span class="p">):</span>
+<a id="__codelineno-0-38" name="__codelineno-0-38"></a>    <span class="sd">&quot;&quot;&quot;Interface to create an Action Row.</span>
+<a id="__codelineno-0-39" name="__codelineno-0-39"></a><span class="sd">    This class accepts and stores. other discord components.</span>
+<a id="__codelineno-0-40" name="__codelineno-0-40"></a><span class="sd">    &quot;&quot;&quot;</span>
+<a id="__codelineno-0-41" name="__codelineno-0-41"></a>
+<a id="__codelineno-0-42" name="__codelineno-0-42"></a>    <span class="nb">type</span> <span class="o">=</span> <span class="n">ComponentType</span><span class="o">.</span><span class="n">ACTION_ROW</span>
+<a id="__codelineno-0-43" name="__codelineno-0-43"></a>    <span class="n">items</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Component</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+<a id="__codelineno-0-44" name="__codelineno-0-44"></a>    <span class="sd">&quot;&quot;&quot;List of items stored in the container.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-45" name="__codelineno-0-45"></a>
+<a id="__codelineno-0-46" name="__codelineno-0-46"></a>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">items</span><span class="p">:</span> <span class="n">Component</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<a id="__codelineno-0-47" name="__codelineno-0-47"></a>        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">items</span><span class="p">:</span>
+<a id="__codelineno-0-48" name="__codelineno-0-48"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">items</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">item</span><span class="p">)</span>
+<a id="__codelineno-0-49" name="__codelineno-0-49"></a>        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+<a id="__codelineno-0-50" name="__codelineno-0-50"></a>
+<a id="__codelineno-0-51" name="__codelineno-0-51"></a>    <span class="k">def</span> <span class="nf">to_payload</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">]:</span>
+<a id="__codelineno-0-52" name="__codelineno-0-52"></a>        <span class="k">return</span> <span class="p">{</span><span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">type</span><span class="p">),</span> <span class="s2">&quot;components&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">item</span><span class="o">.</span><span class="n">to_payload</span><span class="p">()</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">items</span><span class="p">]}</span>
+<a id="__codelineno-0-53" name="__codelineno-0-53"></a>
+<a id="__codelineno-0-54" name="__codelineno-0-54"></a>    <span class="k">def</span> <span class="nf">add_button</span><span class="p">(</span>
+<a id="__codelineno-0-55" name="__codelineno-0-55"></a>        <span class="bp">self</span><span class="p">,</span>
+<a id="__codelineno-0-56" name="__codelineno-0-56"></a>        <span class="o">*</span><span class="p">,</span>
+<a id="__codelineno-0-57" name="__codelineno-0-57"></a>        <span class="n">style</span><span class="p">:</span> <span class="n">ButtonStyle</span> <span class="o">=</span> <span class="n">ButtonStyle</span><span class="o">.</span><span class="n">SECONDARY</span><span class="p">,</span>
+<a id="__codelineno-0-58" name="__codelineno-0-58"></a>        <span class="n">label</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<a id="__codelineno-0-59" name="__codelineno-0-59"></a>        <span class="n">emoji</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="s2">&quot;CustomEmoji&quot;</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<a id="__codelineno-0-60" name="__codelineno-0-60"></a>        <span class="n">custom_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<a id="__codelineno-0-61" name="__codelineno-0-61"></a>        <span class="n">disabled</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+<a id="__codelineno-0-62" name="__codelineno-0-62"></a>        <span class="n">url</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<a id="__codelineno-0-63" name="__codelineno-0-63"></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Button</span><span class="p">:</span>
+<a id="__codelineno-0-64" name="__codelineno-0-64"></a>        <span class="sd">&quot;&quot;&quot;Adds a button to the container.</span>
+<a id="__codelineno-0-65" name="__codelineno-0-65"></a>
+<a id="__codelineno-0-66" name="__codelineno-0-66"></a><span class="sd">        Arguments</span>
+<a id="__codelineno-0-67" name="__codelineno-0-67"></a><span class="sd">        ---------</span>
+<a id="__codelineno-0-68" name="__codelineno-0-68"></a>
+<a id="__codelineno-0-69" name="__codelineno-0-69"></a><span class="sd">        style : wyvern.components.base.ButtonStyle</span>
+<a id="__codelineno-0-70" name="__codelineno-0-70"></a><span class="sd">            The style of button.</span>
+<a id="__codelineno-0-71" name="__codelineno-0-71"></a><span class="sd">        label : str | None</span>
+<a id="__codelineno-0-72" name="__codelineno-0-72"></a><span class="sd">            Button&#39;s label.</span>
+<a id="__codelineno-0-73" name="__codelineno-0-73"></a><span class="sd">        emoji : str | wyvern.models.emojis.CustomEmoji</span>
+<a id="__codelineno-0-74" name="__codelineno-0-74"></a><span class="sd">            A unicode emoji or a custom one.</span>
+<a id="__codelineno-0-75" name="__codelineno-0-75"></a><span class="sd">        custom_id : str</span>
+<a id="__codelineno-0-76" name="__codelineno-0-76"></a><span class="sd">            A custom id set to the button.</span>
+<a id="__codelineno-0-77" name="__codelineno-0-77"></a><span class="sd">        disabled : bool</span>
+<a id="__codelineno-0-78" name="__codelineno-0-78"></a><span class="sd">            Set this to [True][] to disable clicks on button.</span>
+<a id="__codelineno-0-79" name="__codelineno-0-79"></a><span class="sd">        url : str</span>
+<a id="__codelineno-0-80" name="__codelineno-0-80"></a><span class="sd">            The URL this button points to.</span>
+<a id="__codelineno-0-81" name="__codelineno-0-81"></a>
+<a id="__codelineno-0-82" name="__codelineno-0-82"></a><span class="sd">        Returns</span>
+<a id="__codelineno-0-83" name="__codelineno-0-83"></a><span class="sd">        -------</span>
+<a id="__codelineno-0-84" name="__codelineno-0-84"></a>
+<a id="__codelineno-0-85" name="__codelineno-0-85"></a><span class="sd">        wyvern.components.buttons.Button</span>
+<a id="__codelineno-0-86" name="__codelineno-0-86"></a><span class="sd">            The button that was created.</span>
+<a id="__codelineno-0-87" name="__codelineno-0-87"></a>
+<a id="__codelineno-0-88" name="__codelineno-0-88"></a><span class="sd">        &quot;&quot;&quot;</span>
+<a id="__codelineno-0-89" name="__codelineno-0-89"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">items</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+<a id="__codelineno-0-90" name="__codelineno-0-90"></a>            <span class="n">button</span> <span class="o">:=</span> <span class="n">Button</span><span class="p">(</span>
+<a id="__codelineno-0-91" name="__codelineno-0-91"></a>                <span class="nb">type</span><span class="o">=</span><span class="n">ComponentType</span><span class="o">.</span><span class="n">BUTTON</span><span class="p">,</span>
+<a id="__codelineno-0-92" name="__codelineno-0-92"></a>                <span class="n">style</span><span class="o">=</span><span class="n">style</span><span class="p">,</span>
+<a id="__codelineno-0-93" name="__codelineno-0-93"></a>                <span class="n">label</span><span class="o">=</span><span class="n">label</span><span class="p">,</span>
+<a id="__codelineno-0-94" name="__codelineno-0-94"></a>                <span class="n">emoji</span><span class="o">=</span><span class="n">emoji</span><span class="p">,</span>
+<a id="__codelineno-0-95" name="__codelineno-0-95"></a>                <span class="n">custom_id</span><span class="o">=</span><span class="n">custom_id</span><span class="p">,</span>
+<a id="__codelineno-0-96" name="__codelineno-0-96"></a>                <span class="n">disabled</span><span class="o">=</span><span class="n">disabled</span><span class="p">,</span>
+<a id="__codelineno-0-97" name="__codelineno-0-97"></a>                <span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span>
+<a id="__codelineno-0-98" name="__codelineno-0-98"></a>            <span class="p">)</span>
+<a id="__codelineno-0-99" name="__codelineno-0-99"></a>        <span class="p">)</span>
+<a id="__codelineno-0-100" name="__codelineno-0-100"></a>        <span class="k">return</span> <span class="n">button</span>
+</code></pre></div></td></tr></table></div>
         </details>
 
-
+  
 
   <div class="doc doc-children">
 
@@ -898,60 +949,42 @@ This class accepts and stores. other discord components.</p>
 
 
 
-  <div class="doc doc-object doc-attribute">
+
+<div class="doc doc-object doc-attribute">
 
 
 
 <h3 id="wyvern.components.container.ActionRowContainer.items" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">items</span><span class="p">:</span> <span class="nb">list</span></code>
-
+<code class="highlight language-python"><span class="n">items</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Component</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+  </span>
 
 </h3>
 
-    <div class="doc doc-contents ">
 
+  <div class="doc doc-contents ">
+  
       <p>List of items stored in the container.</p>
-    </div>
-
   </div>
 
-
-
-  <div class="doc doc-object doc-attribute">
-
-
-
-<h3 id="wyvern.components.container.ActionRowContainer.type" class="doc doc-heading">
-<code class="highlight language-python"><span class="nb">type</span><span class="p">:</span> <span class="n">ComponentType</span></code>
-
-
-</h3>
-
-    <div class="doc doc-contents ">
-
-      <p>Type of the component.</p>
-    </div>
-
-  </div>
+</div>
 
 
 
-
-
-
-
-  <div class="doc doc-object doc-method">
+<div class="doc doc-object doc-function">
 
 
 
 <h3 id="wyvern.components.container.ActionRowContainer.add_button" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">add_button</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">style</span><span class="o">=&lt;</span><span class="n">ButtonStyle</span><span class="o">.</span><span class="n">SECONDARY</span><span class="p">:</span> <span class="mi">2</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">emoji</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">custom_id</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">url</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
-
+<code class="highlight language-python"><span class="n">add_button</span><span class="p">(</span><span class="o">*</span><span class="p">,</span> <span class="n">style</span><span class="o">=</span><span class="n">ButtonStyle</span><span class="o">.</span><span class="n">SECONDARY</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">emoji</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">custom_id</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">disabled</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">url</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span></code>
 
 </h3>
 
-    <div class="doc doc-contents ">
 
+  <div class="doc doc-contents ">
+  
       <p>Adds a button to the container.</p>
 <h5 id="wyvern.components.container.ActionRowContainer.add_button--arguments">Arguments</h5>
 <p>style : wyvern.components.base.ButtonStyle
@@ -963,90 +996,145 @@ emoji : str | wyvern.models.emojis.CustomEmoji
 custom_id : str
     A custom id set to the button.
 disabled : bool
-    Set this to [True][] to disable clicks on button.
+    Set this to <a class="autorefs autorefs-external" href="https://docs.python.org/3.9/library/constants.html#True">True</a> to disable clicks on button.
 url : str
     The URL this button points to.</p>
-<h5 id="wyvern.components.container.ActionRowContainer.add_button--returns">Returns</h5>
-<p>wyvern.components.buttons.Button
-    The button that was created.</p>
 
-        <details class="quote">
-          <summary>Source code in <code>wyvern/components/container.py</code></summary>
-          <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">def</span> <span class="nf">add_button</span><span class="p">(</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="bp">self</span><span class="p">,</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="o">*</span><span class="p">,</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">style</span><span class="p">:</span> <span class="n">ButtonStyle</span> <span class="o">=</span> <span class="n">ButtonStyle</span><span class="o">.</span><span class="n">SECONDARY</span><span class="p">,</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="n">label</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="n">emoji</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="s2">&quot;CustomEmoji&quot;</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="n">custom_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="n">disabled</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="n">url</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Button</span><span class="p">:</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="sd">&quot;&quot;&quot;Adds a button to the container.</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="sd">    Arguments</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="sd">    ---------</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="sd">    style : wyvern.components.base.ButtonStyle</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="sd">        The style of button.</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="sd">    label : str | None</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="sd">        Button&#39;s label.</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="sd">    emoji : str | wyvern.models.emojis.CustomEmoji</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="sd">        A unicode emoji or a custom one.</span>
-<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="sd">    custom_id : str</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="sd">        A custom id set to the button.</span>
-<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a><span class="sd">    disabled : bool</span>
-<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a><span class="sd">        Set this to [True][] to disable clicks on button.</span>
-<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a><span class="sd">    url : str</span>
-<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a><span class="sd">        The URL this button points to.</span>
-<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>
-<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a><span class="sd">    Returns</span>
-<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a><span class="sd">    -------</span>
-<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>
-<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a><span class="sd">    wyvern.components.buttons.Button</span>
-<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a><span class="sd">        The button that was created.</span>
-<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>
-<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a><span class="sd">    &quot;&quot;&quot;</span>
-<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">items</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
-<a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>        <span class="n">button</span> <span class="o">:=</span> <span class="n">Button</span><span class="p">(</span>
-<a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>            <span class="nb">type</span><span class="o">=</span><span class="n">ComponentType</span><span class="o">.</span><span class="n">BUTTON</span><span class="p">,</span>
-<a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>            <span class="n">style</span><span class="o">=</span><span class="n">style</span><span class="p">,</span>
-<a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>            <span class="n">label</span><span class="o">=</span><span class="n">label</span><span class="p">,</span>
-<a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>            <span class="n">emoji</span><span class="o">=</span><span class="n">emoji</span><span class="p">,</span>
-<a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a>            <span class="n">custom_id</span><span class="o">=</span><span class="n">custom_id</span><span class="p">,</span>
-<a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a>            <span class="n">disabled</span><span class="o">=</span><span class="n">disabled</span><span class="p">,</span>
-<a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a>            <span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span>
-<a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a>        <span class="p">)</span>
-<a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a>    <span class="p">)</span>
-<a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a>    <span class="k">return</span> <span class="n">button</span>
-</code></pre></div>
-        </details>
-    </div>
+  <p><strong>Returns:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>
+                <code>wyvern.<span title="wyvern.components">components</span>.<a class="autorefs autorefs-internal" title="wyvern.components.buttons" href="../buttons/#wyvern.components.buttons">buttons</a>.<a class="autorefs autorefs-internal" title="wyvern.components.buttons.Button" href="../buttons/#wyvern.components.buttons.Button">Button</a></code>
+          </td>
+          <td><p>The button that was created.</p></td>
+        </tr>
+    </tbody>
+  </table>
+
+      <details class="quote">
+        <summary>Source code in <code>wyvern/components/container.py</code></summary>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-54"> 54</a></span>
+<span class="normal"><a href="#__codelineno-0-55"> 55</a></span>
+<span class="normal"><a href="#__codelineno-0-56"> 56</a></span>
+<span class="normal"><a href="#__codelineno-0-57"> 57</a></span>
+<span class="normal"><a href="#__codelineno-0-58"> 58</a></span>
+<span class="normal"><a href="#__codelineno-0-59"> 59</a></span>
+<span class="normal"><a href="#__codelineno-0-60"> 60</a></span>
+<span class="normal"><a href="#__codelineno-0-61"> 61</a></span>
+<span class="normal"><a href="#__codelineno-0-62"> 62</a></span>
+<span class="normal"><a href="#__codelineno-0-63"> 63</a></span>
+<span class="normal"><a href="#__codelineno-0-64"> 64</a></span>
+<span class="normal"><a href="#__codelineno-0-65"> 65</a></span>
+<span class="normal"><a href="#__codelineno-0-66"> 66</a></span>
+<span class="normal"><a href="#__codelineno-0-67"> 67</a></span>
+<span class="normal"><a href="#__codelineno-0-68"> 68</a></span>
+<span class="normal"><a href="#__codelineno-0-69"> 69</a></span>
+<span class="normal"><a href="#__codelineno-0-70"> 70</a></span>
+<span class="normal"><a href="#__codelineno-0-71"> 71</a></span>
+<span class="normal"><a href="#__codelineno-0-72"> 72</a></span>
+<span class="normal"><a href="#__codelineno-0-73"> 73</a></span>
+<span class="normal"><a href="#__codelineno-0-74"> 74</a></span>
+<span class="normal"><a href="#__codelineno-0-75"> 75</a></span>
+<span class="normal"><a href="#__codelineno-0-76"> 76</a></span>
+<span class="normal"><a href="#__codelineno-0-77"> 77</a></span>
+<span class="normal"><a href="#__codelineno-0-78"> 78</a></span>
+<span class="normal"><a href="#__codelineno-0-79"> 79</a></span>
+<span class="normal"><a href="#__codelineno-0-80"> 80</a></span>
+<span class="normal"><a href="#__codelineno-0-81"> 81</a></span>
+<span class="normal"><a href="#__codelineno-0-82"> 82</a></span>
+<span class="normal"><a href="#__codelineno-0-83"> 83</a></span>
+<span class="normal"><a href="#__codelineno-0-84"> 84</a></span>
+<span class="normal"><a href="#__codelineno-0-85"> 85</a></span>
+<span class="normal"><a href="#__codelineno-0-86"> 86</a></span>
+<span class="normal"><a href="#__codelineno-0-87"> 87</a></span>
+<span class="normal"><a href="#__codelineno-0-88"> 88</a></span>
+<span class="normal"><a href="#__codelineno-0-89"> 89</a></span>
+<span class="normal"><a href="#__codelineno-0-90"> 90</a></span>
+<span class="normal"><a href="#__codelineno-0-91"> 91</a></span>
+<span class="normal"><a href="#__codelineno-0-92"> 92</a></span>
+<span class="normal"><a href="#__codelineno-0-93"> 93</a></span>
+<span class="normal"><a href="#__codelineno-0-94"> 94</a></span>
+<span class="normal"><a href="#__codelineno-0-95"> 95</a></span>
+<span class="normal"><a href="#__codelineno-0-96"> 96</a></span>
+<span class="normal"><a href="#__codelineno-0-97"> 97</a></span>
+<span class="normal"><a href="#__codelineno-0-98"> 98</a></span>
+<span class="normal"><a href="#__codelineno-0-99"> 99</a></span>
+<span class="normal"><a href="#__codelineno-0-100">100</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-54" name="__codelineno-0-54"></a><span class="k">def</span> <span class="nf">add_button</span><span class="p">(</span>
+<a id="__codelineno-0-55" name="__codelineno-0-55"></a>    <span class="bp">self</span><span class="p">,</span>
+<a id="__codelineno-0-56" name="__codelineno-0-56"></a>    <span class="o">*</span><span class="p">,</span>
+<a id="__codelineno-0-57" name="__codelineno-0-57"></a>    <span class="n">style</span><span class="p">:</span> <span class="n">ButtonStyle</span> <span class="o">=</span> <span class="n">ButtonStyle</span><span class="o">.</span><span class="n">SECONDARY</span><span class="p">,</span>
+<a id="__codelineno-0-58" name="__codelineno-0-58"></a>    <span class="n">label</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<a id="__codelineno-0-59" name="__codelineno-0-59"></a>    <span class="n">emoji</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="s2">&quot;CustomEmoji&quot;</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<a id="__codelineno-0-60" name="__codelineno-0-60"></a>    <span class="n">custom_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<a id="__codelineno-0-61" name="__codelineno-0-61"></a>    <span class="n">disabled</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span><span class="p">,</span>
+<a id="__codelineno-0-62" name="__codelineno-0-62"></a>    <span class="n">url</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+<a id="__codelineno-0-63" name="__codelineno-0-63"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Button</span><span class="p">:</span>
+<a id="__codelineno-0-64" name="__codelineno-0-64"></a>    <span class="sd">&quot;&quot;&quot;Adds a button to the container.</span>
+<a id="__codelineno-0-65" name="__codelineno-0-65"></a>
+<a id="__codelineno-0-66" name="__codelineno-0-66"></a><span class="sd">    Arguments</span>
+<a id="__codelineno-0-67" name="__codelineno-0-67"></a><span class="sd">    ---------</span>
+<a id="__codelineno-0-68" name="__codelineno-0-68"></a>
+<a id="__codelineno-0-69" name="__codelineno-0-69"></a><span class="sd">    style : wyvern.components.base.ButtonStyle</span>
+<a id="__codelineno-0-70" name="__codelineno-0-70"></a><span class="sd">        The style of button.</span>
+<a id="__codelineno-0-71" name="__codelineno-0-71"></a><span class="sd">    label : str | None</span>
+<a id="__codelineno-0-72" name="__codelineno-0-72"></a><span class="sd">        Button&#39;s label.</span>
+<a id="__codelineno-0-73" name="__codelineno-0-73"></a><span class="sd">    emoji : str | wyvern.models.emojis.CustomEmoji</span>
+<a id="__codelineno-0-74" name="__codelineno-0-74"></a><span class="sd">        A unicode emoji or a custom one.</span>
+<a id="__codelineno-0-75" name="__codelineno-0-75"></a><span class="sd">    custom_id : str</span>
+<a id="__codelineno-0-76" name="__codelineno-0-76"></a><span class="sd">        A custom id set to the button.</span>
+<a id="__codelineno-0-77" name="__codelineno-0-77"></a><span class="sd">    disabled : bool</span>
+<a id="__codelineno-0-78" name="__codelineno-0-78"></a><span class="sd">        Set this to [True][] to disable clicks on button.</span>
+<a id="__codelineno-0-79" name="__codelineno-0-79"></a><span class="sd">    url : str</span>
+<a id="__codelineno-0-80" name="__codelineno-0-80"></a><span class="sd">        The URL this button points to.</span>
+<a id="__codelineno-0-81" name="__codelineno-0-81"></a>
+<a id="__codelineno-0-82" name="__codelineno-0-82"></a><span class="sd">    Returns</span>
+<a id="__codelineno-0-83" name="__codelineno-0-83"></a><span class="sd">    -------</span>
+<a id="__codelineno-0-84" name="__codelineno-0-84"></a>
+<a id="__codelineno-0-85" name="__codelineno-0-85"></a><span class="sd">    wyvern.components.buttons.Button</span>
+<a id="__codelineno-0-86" name="__codelineno-0-86"></a><span class="sd">        The button that was created.</span>
+<a id="__codelineno-0-87" name="__codelineno-0-87"></a>
+<a id="__codelineno-0-88" name="__codelineno-0-88"></a><span class="sd">    &quot;&quot;&quot;</span>
+<a id="__codelineno-0-89" name="__codelineno-0-89"></a>    <span class="bp">self</span><span class="o">.</span><span class="n">items</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+<a id="__codelineno-0-90" name="__codelineno-0-90"></a>        <span class="n">button</span> <span class="o">:=</span> <span class="n">Button</span><span class="p">(</span>
+<a id="__codelineno-0-91" name="__codelineno-0-91"></a>            <span class="nb">type</span><span class="o">=</span><span class="n">ComponentType</span><span class="o">.</span><span class="n">BUTTON</span><span class="p">,</span>
+<a id="__codelineno-0-92" name="__codelineno-0-92"></a>            <span class="n">style</span><span class="o">=</span><span class="n">style</span><span class="p">,</span>
+<a id="__codelineno-0-93" name="__codelineno-0-93"></a>            <span class="n">label</span><span class="o">=</span><span class="n">label</span><span class="p">,</span>
+<a id="__codelineno-0-94" name="__codelineno-0-94"></a>            <span class="n">emoji</span><span class="o">=</span><span class="n">emoji</span><span class="p">,</span>
+<a id="__codelineno-0-95" name="__codelineno-0-95"></a>            <span class="n">custom_id</span><span class="o">=</span><span class="n">custom_id</span><span class="p">,</span>
+<a id="__codelineno-0-96" name="__codelineno-0-96"></a>            <span class="n">disabled</span><span class="o">=</span><span class="n">disabled</span><span class="p">,</span>
+<a id="__codelineno-0-97" name="__codelineno-0-97"></a>            <span class="n">url</span><span class="o">=</span><span class="n">url</span><span class="p">,</span>
+<a id="__codelineno-0-98" name="__codelineno-0-98"></a>        <span class="p">)</span>
+<a id="__codelineno-0-99" name="__codelineno-0-99"></a>    <span class="p">)</span>
+<a id="__codelineno-0-100" name="__codelineno-0-100"></a>    <span class="k">return</span> <span class="n">button</span>
+</code></pre></div></td></tr></table></div>
+      </details>
+  </div>
+
+</div>
+
+
 
   </div>
 
+  </div>
 
+</div>
 
 
 
 
   </div>
 
-    </div>
-
   </div>
 
-
-
-
-
-
-
-  </div>
-
-    </div>
-
-  </div>
+</div>
 
 
 

@@ -442,8 +442,36 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#wyvern.components.base.ButtonStyle.BLURPLE" class="md-nav__link">
+    BLURPLE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#wyvern.components.base.ButtonStyle.DANGER" class="md-nav__link">
     DANGER
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wyvern.components.base.ButtonStyle.GRAY" class="md-nav__link">
+    GRAY
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wyvern.components.base.ButtonStyle.GREEN" class="md-nav__link">
+    GREEN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wyvern.components.base.ButtonStyle.GREY" class="md-nav__link">
+    GREY
   </a>
   
 </li>
@@ -463,6 +491,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#wyvern.components.base.ButtonStyle.RED" class="md-nav__link">
+    RED
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#wyvern.components.base.ButtonStyle.SECONDARY" class="md-nav__link">
     SECONDARY
   </a>
@@ -472,6 +507,13 @@
           <li class="md-nav__item">
   <a href="#wyvern.components.base.ButtonStyle.SUCCESS" class="md-nav__link">
     SUCCESS
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wyvern.components.base.ButtonStyle.URL" class="md-nav__link">
+    URL
   </a>
   
 </li>
@@ -486,12 +528,18 @@
     Component
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#wyvern.components.base.ComponentType" class="md-nav__link">
-    ComponentType
+    <nav class="md-nav" aria-label="Component">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wyvern.components.base.Component.type" class="md-nav__link">
+    type
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -620,7 +668,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../docs/api_reference/presences.md" class="md-nav__link">
+      <a href="../../presences/" class="md-nav__link">
         presences
       </a>
     </li>
@@ -795,11 +843,11 @@
 
 <div class="doc doc-object doc-module">
 
+
 <a id="wyvern.components.base"></a>
-    <div class="doc doc-contents first">
+  <div class="doc doc-contents first">
 
-
-
+  
 
   <div class="doc doc-children">
 
@@ -810,54 +858,80 @@
 
 
 
-  <div class="doc doc-object doc-class">
+<div class="doc doc-object doc-class">
 
 
 
 <h2 id="wyvern.components.base.ButtonStyle" class="doc doc-heading">
-        <code>
-ButtonStyle            (<span title="enum.IntEnum">IntEnum</span>)
-        </code>
-
+        <code>ButtonStyle</code>
 
 
 </h2>
 
-    <div class="doc doc-contents ">
 
+  <div class="doc doc-contents ">
+      <p class="doc doc-class-bases">
+        Bases: <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.9/library/enum.html#module-enum">enum</a>.<a class="autorefs autorefs-external" title="enum.IntEnum" href="https://docs.python.org/3.9/library/enum.html#enum.IntEnum">IntEnum</a></code></p>
+
+  
       <p>Enums for Button style.</p>
+
 
         <details class="quote">
           <summary>Source code in <code>wyvern/components/base.py</code></summary>
-          <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">class</span> <span class="nc">ButtonStyle</span><span class="p">(</span><span class="n">enum</span><span class="o">.</span><span class="n">IntEnum</span><span class="p">):</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="sd">&quot;&quot;&quot;Enums for Button style.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">PRIMARY</span> <span class="o">=</span> <span class="mi">1</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="sd">&quot;&quot;&quot;A primary blurple discord button.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="n">SECONDARY</span> <span class="o">=</span> <span class="mi">2</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="sd">&quot;&quot;&quot;A secondary gray discord button.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="n">SUCCESS</span> <span class="o">=</span> <span class="mi">3</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="sd">&quot;&quot;&quot;Green discord button.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    <span class="n">DANGER</span> <span class="o">=</span> <span class="mi">4</span>
-<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>    <span class="sd">&quot;&quot;&quot;Red discord button.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>    <span class="n">LINK</span> <span class="o">=</span> <span class="mi">5</span>
-<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>    <span class="sd">&quot;&quot;&quot;Button pointing to an URL&quot;&quot;&quot;</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>    <span class="n">BLURPLE</span> <span class="o">=</span> <span class="n">PRIMARY</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>    <span class="sd">&quot;&quot;&quot;Alias for PRIMARY&quot;&quot;&quot;</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>    <span class="n">GRAY</span> <span class="o">=</span> <span class="n">SECONDARY</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>    <span class="sd">&quot;&quot;&quot;Alias for SECONDARY&quot;&quot;&quot;</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>    <span class="n">GREY</span> <span class="o">=</span> <span class="n">SECONDARY</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>    <span class="sd">&quot;&quot;&quot;Alias for SECONDARY&quot;&quot;&quot;</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>    <span class="n">GREEN</span> <span class="o">=</span> <span class="n">SUCCESS</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>    <span class="sd">&quot;&quot;&quot;Alias for SUCCESS&quot;&quot;&quot;</span>
-<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>    <span class="n">RED</span> <span class="o">=</span> <span class="n">DANGER</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>    <span class="sd">&quot;&quot;&quot;Alias for DANGER&quot;&quot;&quot;</span>
-<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>    <span class="n">URL</span> <span class="o">=</span> <span class="n">LINK</span>
-<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>    <span class="sd">&quot;&quot;&quot;Alias for LINK&quot;&quot;&quot;</span>
-</code></pre></div>
+          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-31">31</a></span>
+<span class="normal"><a href="#__codelineno-0-32">32</a></span>
+<span class="normal"><a href="#__codelineno-0-33">33</a></span>
+<span class="normal"><a href="#__codelineno-0-34">34</a></span>
+<span class="normal"><a href="#__codelineno-0-35">35</a></span>
+<span class="normal"><a href="#__codelineno-0-36">36</a></span>
+<span class="normal"><a href="#__codelineno-0-37">37</a></span>
+<span class="normal"><a href="#__codelineno-0-38">38</a></span>
+<span class="normal"><a href="#__codelineno-0-39">39</a></span>
+<span class="normal"><a href="#__codelineno-0-40">40</a></span>
+<span class="normal"><a href="#__codelineno-0-41">41</a></span>
+<span class="normal"><a href="#__codelineno-0-42">42</a></span>
+<span class="normal"><a href="#__codelineno-0-43">43</a></span>
+<span class="normal"><a href="#__codelineno-0-44">44</a></span>
+<span class="normal"><a href="#__codelineno-0-45">45</a></span>
+<span class="normal"><a href="#__codelineno-0-46">46</a></span>
+<span class="normal"><a href="#__codelineno-0-47">47</a></span>
+<span class="normal"><a href="#__codelineno-0-48">48</a></span>
+<span class="normal"><a href="#__codelineno-0-49">49</a></span>
+<span class="normal"><a href="#__codelineno-0-50">50</a></span>
+<span class="normal"><a href="#__codelineno-0-51">51</a></span>
+<span class="normal"><a href="#__codelineno-0-52">52</a></span>
+<span class="normal"><a href="#__codelineno-0-53">53</a></span>
+<span class="normal"><a href="#__codelineno-0-54">54</a></span>
+<span class="normal"><a href="#__codelineno-0-55">55</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-31" name="__codelineno-0-31"></a><span class="k">class</span> <span class="nc">ButtonStyle</span><span class="p">(</span><span class="n">enum</span><span class="o">.</span><span class="n">IntEnum</span><span class="p">):</span>
+<a id="__codelineno-0-32" name="__codelineno-0-32"></a>    <span class="sd">&quot;&quot;&quot;Enums for Button style.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-33" name="__codelineno-0-33"></a>
+<a id="__codelineno-0-34" name="__codelineno-0-34"></a>    <span class="n">PRIMARY</span> <span class="o">=</span> <span class="mi">1</span>
+<a id="__codelineno-0-35" name="__codelineno-0-35"></a>    <span class="sd">&quot;&quot;&quot;A primary blurple discord button.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-36" name="__codelineno-0-36"></a>    <span class="n">SECONDARY</span> <span class="o">=</span> <span class="mi">2</span>
+<a id="__codelineno-0-37" name="__codelineno-0-37"></a>    <span class="sd">&quot;&quot;&quot;A secondary gray discord button.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-38" name="__codelineno-0-38"></a>    <span class="n">SUCCESS</span> <span class="o">=</span> <span class="mi">3</span>
+<a id="__codelineno-0-39" name="__codelineno-0-39"></a>    <span class="sd">&quot;&quot;&quot;Green discord button.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-40" name="__codelineno-0-40"></a>    <span class="n">DANGER</span> <span class="o">=</span> <span class="mi">4</span>
+<a id="__codelineno-0-41" name="__codelineno-0-41"></a>    <span class="sd">&quot;&quot;&quot;Red discord button.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-42" name="__codelineno-0-42"></a>    <span class="n">LINK</span> <span class="o">=</span> <span class="mi">5</span>
+<a id="__codelineno-0-43" name="__codelineno-0-43"></a>    <span class="sd">&quot;&quot;&quot;Button pointing to an URL&quot;&quot;&quot;</span>
+<a id="__codelineno-0-44" name="__codelineno-0-44"></a>    <span class="n">BLURPLE</span> <span class="o">=</span> <span class="n">PRIMARY</span>
+<a id="__codelineno-0-45" name="__codelineno-0-45"></a>    <span class="sd">&quot;&quot;&quot;Alias for PRIMARY&quot;&quot;&quot;</span>
+<a id="__codelineno-0-46" name="__codelineno-0-46"></a>    <span class="n">GRAY</span> <span class="o">=</span> <span class="n">SECONDARY</span>
+<a id="__codelineno-0-47" name="__codelineno-0-47"></a>    <span class="sd">&quot;&quot;&quot;Alias for SECONDARY&quot;&quot;&quot;</span>
+<a id="__codelineno-0-48" name="__codelineno-0-48"></a>    <span class="n">GREY</span> <span class="o">=</span> <span class="n">SECONDARY</span>
+<a id="__codelineno-0-49" name="__codelineno-0-49"></a>    <span class="sd">&quot;&quot;&quot;Alias for SECONDARY&quot;&quot;&quot;</span>
+<a id="__codelineno-0-50" name="__codelineno-0-50"></a>    <span class="n">GREEN</span> <span class="o">=</span> <span class="n">SUCCESS</span>
+<a id="__codelineno-0-51" name="__codelineno-0-51"></a>    <span class="sd">&quot;&quot;&quot;Alias for SUCCESS&quot;&quot;&quot;</span>
+<a id="__codelineno-0-52" name="__codelineno-0-52"></a>    <span class="n">RED</span> <span class="o">=</span> <span class="n">DANGER</span>
+<a id="__codelineno-0-53" name="__codelineno-0-53"></a>    <span class="sd">&quot;&quot;&quot;Alias for DANGER&quot;&quot;&quot;</span>
+<a id="__codelineno-0-54" name="__codelineno-0-54"></a>    <span class="n">URL</span> <span class="o">=</span> <span class="n">LINK</span>
+<a id="__codelineno-0-55" name="__codelineno-0-55"></a>    <span class="sd">&quot;&quot;&quot;Alias for LINK&quot;&quot;&quot;</span>
+</code></pre></div></td></tr></table></div>
         </details>
 
-
+  
 
   <div class="doc doc-children">
 
@@ -866,146 +940,289 @@ ButtonStyle            (<span title="enum.IntEnum">IntEnum</span>)
 
 
 
-  <div class="doc doc-object doc-attribute">
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="wyvern.components.base.ButtonStyle.BLURPLE" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">BLURPLE</span> <span class="o">=</span> <span class="n">PRIMARY</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Alias for PRIMARY</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
 
 
 
 <h3 id="wyvern.components.base.ButtonStyle.DANGER" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">DANGER</span></code>
-
+<code class="highlight language-python"><span class="n">DANGER</span> <span class="o">=</span> <span class="mi">4</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+  </span>
 
 </h3>
 
-    <div class="doc doc-contents ">
 
+  <div class="doc doc-contents ">
+  
       <p>Red discord button.</p>
-    </div>
-
   </div>
 
+</div>
+
+<div class="doc doc-object doc-attribute">
 
 
-  <div class="doc doc-object doc-attribute">
+
+<h3 id="wyvern.components.base.ButtonStyle.GRAY" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">GRAY</span> <span class="o">=</span> <span class="n">SECONDARY</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Alias for SECONDARY</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="wyvern.components.base.ButtonStyle.GREEN" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">GREEN</span> <span class="o">=</span> <span class="n">SUCCESS</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Alias for SUCCESS</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="wyvern.components.base.ButtonStyle.GREY" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">GREY</span> <span class="o">=</span> <span class="n">SECONDARY</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Alias for SECONDARY</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
 
 
 
 <h3 id="wyvern.components.base.ButtonStyle.LINK" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">LINK</span></code>
-
+<code class="highlight language-python"><span class="n">LINK</span> <span class="o">=</span> <span class="mi">5</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+  </span>
 
 </h3>
 
-    <div class="doc doc-contents ">
 
+  <div class="doc doc-contents ">
+  
       <p>Button pointing to an URL</p>
-    </div>
-
   </div>
 
+</div>
 
-
-  <div class="doc doc-object doc-attribute">
+<div class="doc doc-object doc-attribute">
 
 
 
 <h3 id="wyvern.components.base.ButtonStyle.PRIMARY" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">PRIMARY</span></code>
-
+<code class="highlight language-python"><span class="n">PRIMARY</span> <span class="o">=</span> <span class="mi">1</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+  </span>
 
 </h3>
 
-    <div class="doc doc-contents ">
 
+  <div class="doc doc-contents ">
+  
       <p>A primary blurple discord button.</p>
-    </div>
-
   </div>
 
+</div>
+
+<div class="doc doc-object doc-attribute">
 
 
-  <div class="doc doc-object doc-attribute">
+
+<h3 id="wyvern.components.base.ButtonStyle.RED" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">RED</span> <span class="o">=</span> <span class="n">DANGER</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Alias for DANGER</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
 
 
 
 <h3 id="wyvern.components.base.ButtonStyle.SECONDARY" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">SECONDARY</span></code>
-
+<code class="highlight language-python"><span class="n">SECONDARY</span> <span class="o">=</span> <span class="mi">2</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+  </span>
 
 </h3>
 
-    <div class="doc doc-contents ">
 
+  <div class="doc doc-contents ">
+  
       <p>A secondary gray discord button.</p>
-    </div>
-
   </div>
 
+</div>
 
-
-  <div class="doc doc-object doc-attribute">
+<div class="doc doc-object doc-attribute">
 
 
 
 <h3 id="wyvern.components.base.ButtonStyle.SUCCESS" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">SUCCESS</span></code>
-
+<code class="highlight language-python"><span class="n">SUCCESS</span> <span class="o">=</span> <span class="mi">3</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+  </span>
 
 </h3>
 
-    <div class="doc doc-contents ">
 
+  <div class="doc doc-contents ">
+  
       <p>Green discord button.</p>
-    </div>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="wyvern.components.base.ButtonStyle.URL" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">URL</span> <span class="o">=</span> <span class="n">LINK</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Alias for LINK</p>
+  </div>
+
+</div>
+
+
+
+
 
   </div>
 
-
-
-
-
-
-
-
   </div>
 
-    </div>
+</div>
 
-  </div>
-
-
-
-  <div class="doc doc-object doc-class">
+<div class="doc doc-object doc-class">
 
 
 
 <h2 id="wyvern.components.base.Component" class="doc doc-heading">
-        <code>
-Component        </code>
-
+        <code>Component</code>
 
 
 </h2>
 
-    <div class="doc doc-contents ">
 
+  <div class="doc doc-contents ">
+
+  
       <p>Represents a discord component.
 Is the base class for other components.</p>
 
+
         <details class="quote">
           <summary>Source code in <code>wyvern/components/base.py</code></summary>
-          <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">class</span> <span class="nc">Component</span><span class="p">:</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="sd">&quot;&quot;&quot;Represents a discord component.</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="sd">    Is the base class for other components.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="nb">type</span><span class="p">:</span> <span class="n">ComponentType</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="sd">&quot;&quot;&quot;Type of the component.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="k">def</span> <span class="nf">to_payload</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">]:</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>        <span class="k">return</span> <span class="p">{}</span>
-</code></pre></div>
+          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-69">69</a></span>
+<span class="normal"><a href="#__codelineno-0-70">70</a></span>
+<span class="normal"><a href="#__codelineno-0-71">71</a></span>
+<span class="normal"><a href="#__codelineno-0-72">72</a></span>
+<span class="normal"><a href="#__codelineno-0-73">73</a></span>
+<span class="normal"><a href="#__codelineno-0-74">74</a></span>
+<span class="normal"><a href="#__codelineno-0-75">75</a></span>
+<span class="normal"><a href="#__codelineno-0-76">76</a></span>
+<span class="normal"><a href="#__codelineno-0-77">77</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-69" name="__codelineno-0-69"></a><span class="k">class</span> <span class="nc">Component</span><span class="p">:</span>
+<a id="__codelineno-0-70" name="__codelineno-0-70"></a>    <span class="sd">&quot;&quot;&quot;Represents a discord component.</span>
+<a id="__codelineno-0-71" name="__codelineno-0-71"></a><span class="sd">    Is the base class for other components.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-72" name="__codelineno-0-72"></a>
+<a id="__codelineno-0-73" name="__codelineno-0-73"></a>    <span class="nb">type</span><span class="p">:</span> <span class="n">ComponentType</span>
+<a id="__codelineno-0-74" name="__codelineno-0-74"></a>    <span class="sd">&quot;&quot;&quot;Type of the component.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-75" name="__codelineno-0-75"></a>
+<a id="__codelineno-0-76" name="__codelineno-0-76"></a>    <span class="k">def</span> <span class="nf">to_payload</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">]:</span>
+<a id="__codelineno-0-77" name="__codelineno-0-77"></a>        <span class="k">return</span> <span class="p">{}</span>
+</code></pre></div></td></tr></table></div>
         </details>
 
-
+  
 
   <div class="doc doc-children">
 
@@ -1015,6 +1232,26 @@ Is the base class for other components.</p>
 
 
 
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="wyvern.components.base.Component.type" class="doc doc-heading">
+<code class="highlight language-python"><span class="nb">type</span><span class="p">:</span> <span class="n">ComponentType</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Type of the component.</p>
+  </div>
+
+</div>
 
 
 
@@ -1022,82 +1259,18 @@ Is the base class for other components.</p>
 
   </div>
 
-    </div>
-
   </div>
 
-
-
-  <div class="doc doc-object doc-class">
-
-
-
-<h2 id="wyvern.components.base.ComponentType" class="doc doc-heading">
-        <code>
-ComponentType            (<span title="enum.IntEnum">IntEnum</span>)
-        </code>
-
-
-
-</h2>
-
-    <div class="doc doc-contents ">
-
-      <p>An enumeration.</p>
-
-        <details class="quote">
-          <summary>Source code in <code>wyvern/components/base.py</code></summary>
-          <div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">class</span> <span class="nc">ComponentType</span><span class="p">(</span><span class="n">enum</span><span class="o">.</span><span class="n">IntEnum</span><span class="p">):</span>
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    <span class="n">ACTION_ROW</span> <span class="o">=</span> <span class="mi">1</span>
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    <span class="n">BUTTON</span> <span class="o">=</span> <span class="mi">2</span>
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    <span class="n">STRING_SELECT</span> <span class="o">=</span> <span class="mi">3</span>
-<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    <span class="n">TEXT_INPUT</span> <span class="o">=</span> <span class="mi">4</span>
-<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    <span class="n">USER_SELECT</span> <span class="o">=</span> <span class="mi">5</span>
-<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    <span class="n">ROLE_SELECT</span> <span class="o">=</span> <span class="mi">6</span>
-<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="n">MENTIONABLE_SELECT</span> <span class="o">=</span> <span class="mi">7</span>
-<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>    <span class="n">CHANNEL_SELECT</span> <span class="o">=</span> <span class="mi">8</span>
-</code></pre></div>
-        </details>
-
-
-
-  <div class="doc doc-children">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div>
 
 
 
 
   </div>
 
-    </div>
-
   </div>
 
-
-
-
-
-
-
-  </div>
-
-    </div>
-
-  </div>
+</div>
 
 
 

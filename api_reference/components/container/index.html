@@ -481,19 +481,6 @@
     add_button()
   </a>
   
-    <nav class="md-nav" aria-label="add_button()">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#wyvern.components.container.ActionRowContainer.add_button--arguments" class="md-nav__link">
-    Arguments
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
       </ul>
@@ -660,6 +647,67 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../models/users/" class="md-nav__link">
+        users
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2_9" type="checkbox" id="__nav_2_9" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2_9">
+          state_handlers
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="state_handlers" data-md-level="2">
+        <label class="md-nav__title" for="__nav_2_9">
+          <span class="md-nav__icon md-icon"></span>
+          state_handlers
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../state_handlers/users/" class="md-nav__link">
+        users
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -675,6 +723,20 @@
     <li class="md-nav__item">
       <a href="../../rest/" class="md-nav__link">
         rest
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../utils/" class="md-nav__link">
+        utils
       </a>
     </li>
   
@@ -902,8 +964,8 @@ This class accepts and stores. other discord components.</p>
 <a id="__codelineno-0-63" name="__codelineno-0-63"></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Button</span><span class="p">:</span>
 <a id="__codelineno-0-64" name="__codelineno-0-64"></a>        <span class="sd">&quot;&quot;&quot;Adds a button to the container.</span>
 <a id="__codelineno-0-65" name="__codelineno-0-65"></a>
-<a id="__codelineno-0-66" name="__codelineno-0-66"></a><span class="sd">        Arguments</span>
-<a id="__codelineno-0-67" name="__codelineno-0-67"></a><span class="sd">        ---------</span>
+<a id="__codelineno-0-66" name="__codelineno-0-66"></a><span class="sd">        Parameters</span>
+<a id="__codelineno-0-67" name="__codelineno-0-67"></a><span class="sd">        ----------</span>
 <a id="__codelineno-0-68" name="__codelineno-0-68"></a>
 <a id="__codelineno-0-69" name="__codelineno-0-69"></a><span class="sd">        style : wyvern.components.base.ButtonStyle</span>
 <a id="__codelineno-0-70" name="__codelineno-0-70"></a><span class="sd">            The style of button.</span>
@@ -986,19 +1048,80 @@ This class accepts and stores. other discord components.</p>
   <div class="doc doc-contents ">
   
       <p>Adds a button to the container.</p>
-<h5 id="wyvern.components.container.ActionRowContainer.add_button--arguments">Arguments</h5>
-<p>style : wyvern.components.base.ButtonStyle
-    The style of button.
-label : str | None
-    Button's label.
-emoji : str | wyvern.models.emojis.CustomEmoji
-    A unicode emoji or a custom one.
-custom_id : str
-    A custom id set to the button.
-disabled : bool
-    Set this to <a class="autorefs autorefs-external" href="https://docs.python.org/3.9/library/constants.html#True">True</a> to disable clicks on button.
-url : str
-    The URL this button points to.</p>
+
+  <p><strong>Parameters:</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Type</th>
+        <th>Description</th>
+        <th>Default</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td><code>style</code></td>
+          <td>
+                <code>wyvern.<span title="wyvern.components">components</span>.<a class="autorefs autorefs-internal" title="wyvern.components.base" href="../base/#wyvern.components.base">base</a>.<a class="autorefs autorefs-internal" title="wyvern.components.base.ButtonStyle" href="../base/#wyvern.components.base.ButtonStyle">ButtonStyle</a></code>
+          </td>
+          <td><p>The style of button.</p></td>
+          <td>
+                <code>ButtonStyle.SECONDARY</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>label</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.9/library/stdtypes.html#str">str</a> | None</code>
+          </td>
+          <td><p>Button's label.</p></td>
+          <td>
+                <code>None</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>emoji</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.9/library/stdtypes.html#str">str</a> | wyvern.<span title="wyvern.models">models</span>.<span title="wyvern.models.emojis">emojis</span>.<span title="wyvern.models.emojis.CustomEmoji">CustomEmoji</span></code>
+          </td>
+          <td><p>A unicode emoji or a custom one.</p></td>
+          <td>
+                <code>None</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>custom_id</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.9/library/stdtypes.html#str">str</a></code>
+          </td>
+          <td><p>A custom id set to the button.</p></td>
+          <td>
+                <code>None</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>disabled</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.9/library/functions.html#bool">bool</a></code>
+          </td>
+          <td><p>Set this to <a class="autorefs autorefs-external" href="https://docs.python.org/3.9/library/constants.html#True">True</a> to disable clicks on button.</p></td>
+          <td>
+                <code>False</code>
+          </td>
+        </tr>
+        <tr>
+          <td><code>url</code></td>
+          <td>
+                <code><a class="autorefs autorefs-external" href="https://docs.python.org/3.9/library/stdtypes.html#str">str</a></code>
+          </td>
+          <td><p>The URL this button points to.</p></td>
+          <td>
+                <code>None</code>
+          </td>
+        </tr>
+    </tbody>
+  </table>
 
   <p><strong>Returns:</strong></p>
   <table>
@@ -1078,8 +1201,8 @@ url : str
 <a id="__codelineno-0-63" name="__codelineno-0-63"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Button</span><span class="p">:</span>
 <a id="__codelineno-0-64" name="__codelineno-0-64"></a>    <span class="sd">&quot;&quot;&quot;Adds a button to the container.</span>
 <a id="__codelineno-0-65" name="__codelineno-0-65"></a>
-<a id="__codelineno-0-66" name="__codelineno-0-66"></a><span class="sd">    Arguments</span>
-<a id="__codelineno-0-67" name="__codelineno-0-67"></a><span class="sd">    ---------</span>
+<a id="__codelineno-0-66" name="__codelineno-0-66"></a><span class="sd">    Parameters</span>
+<a id="__codelineno-0-67" name="__codelineno-0-67"></a><span class="sd">    ----------</span>
 <a id="__codelineno-0-68" name="__codelineno-0-68"></a>
 <a id="__codelineno-0-69" name="__codelineno-0-69"></a><span class="sd">    style : wyvern.components.base.ButtonStyle</span>
 <a id="__codelineno-0-70" name="__codelineno-0-70"></a><span class="sd">        The style of button.</span>

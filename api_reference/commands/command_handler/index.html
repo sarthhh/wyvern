@@ -12,6 +12,8 @@
         <meta name="author" content="sarth">
       
       
+        <link rel="canonical" href="https://sarthhh.github.io/wyvern/api_reference/commands/command_handler/">
+      
       <link rel="icon" href="../../../assets/wyvern.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
     
@@ -48,6 +50,32 @@
       
 
     
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="command_handler - wyvern" >
+      
+        <meta  property="og:description"  content="Documentation for the Discord API wrapper, wyvern." >
+      
+        <meta  property="og:image"  content="https://sarthhh.github.io/wyvern/assets/images/social/api_reference/commands/command_handler.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://sarthhh.github.io/wyvern/api_reference/commands/command_handler/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="command_handler - wyvern" >
+      
+        <meta  name="twitter:description"  content="Documentation for the Discord API wrapper, wyvern." >
+      
+        <meta  name="twitter:image"  content="https://sarthhh.github.io/wyvern/assets/images/social/api_reference/commands/command_handler.png" >
+      
     
     
   </head>
@@ -1188,9 +1216,9 @@ for the <a class="autorefs autorefs-internal" href="../../clients/#wyvern.client
 <a id="__codelineno-0-20" name="__codelineno-0-20"></a>
 <a id="__codelineno-0-21" name="__codelineno-0-21"></a>    <span class="n">prefix_getter</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span> <span class="o">=</span> <span class="kc">None</span>
 <a id="__codelineno-0-22" name="__codelineno-0-22"></a>    <span class="n">prefix_type</span><span class="p">:</span> <span class="nb">type</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23"></a>    <span class="n">slash_commands</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="s2">&quot;SlashCommand&quot;</span><span class="p">]</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23"></a>    <span class="n">slash_commands</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">SlashCommand</span><span class="p">]</span>
 <a id="__codelineno-0-24" name="__codelineno-0-24"></a>
-<a id="__codelineno-0-25" name="__codelineno-0-25"></a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">get_prefixes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="s2">&quot;Message&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">:</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25"></a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">get_prefixes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="n">Message</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">:</span>
 <a id="__codelineno-0-26" name="__codelineno-0-26"></a>        <span class="sd">&quot;&quot;&quot;Get&#39;s a list of prefix with respect to the message.</span>
 <a id="__codelineno-0-27" name="__codelineno-0-27"></a>
 <a id="__codelineno-0-28" name="__codelineno-0-28"></a><span class="sd">        Parameters</span>
@@ -1214,7 +1242,7 @@ for the <a class="autorefs autorefs-internal" href="../../clients/#wyvern.client
 <a id="__codelineno-0-46" name="__codelineno-0-46"></a>            <span class="k">elif</span> <span class="n">inspect</span><span class="o">.</span><span class="n">isfunction</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">prefix_getter</span><span class="p">):</span>
 <a id="__codelineno-0-47" name="__codelineno-0-47"></a>                <span class="k">return</span> <span class="p">[</span><span class="n">prefix</span><span class="p">]</span> <span class="k">if</span> <span class="nb">isinstance</span><span class="p">((</span><span class="n">prefix</span> <span class="o">:=</span> <span class="bp">self</span><span class="o">.</span><span class="n">prefix_getter</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">)),</span> <span class="nb">str</span><span class="p">)</span> <span class="k">else</span> <span class="n">prefix</span>
 <a id="__codelineno-0-48" name="__codelineno-0-48"></a>
-<a id="__codelineno-0-49" name="__codelineno-0-49"></a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">process_application_commands</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">interaction</span><span class="p">:</span> <span class="s2">&quot;ApplicationCommandInteraction&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<a id="__codelineno-0-49" name="__codelineno-0-49"></a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">process_application_commands</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">interaction</span><span class="p">:</span> <span class="n">ApplicationCommandInteraction</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <a id="__codelineno-0-50" name="__codelineno-0-50"></a>        <span class="sd">&quot;&quot;&quot;Processes application command interactions for app commands.</span>
 <a id="__codelineno-0-51" name="__codelineno-0-51"></a>
 <a id="__codelineno-0-52" name="__codelineno-0-52"></a><span class="sd">        Parameters</span>
@@ -1327,7 +1355,7 @@ for the <a class="autorefs autorefs-internal" href="../../clients/#wyvern.client
 <span class="normal"><a href="#__codelineno-0-44">44</a></span>
 <span class="normal"><a href="#__codelineno-0-45">45</a></span>
 <span class="normal"><a href="#__codelineno-0-46">46</a></span>
-<span class="normal"><a href="#__codelineno-0-47">47</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">get_prefixes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="s2">&quot;Message&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">:</span>
+<span class="normal"><a href="#__codelineno-0-47">47</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-25" name="__codelineno-0-25"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">get_prefixes</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="n">Message</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">:</span>
 <a id="__codelineno-0-26" name="__codelineno-0-26"></a>    <span class="sd">&quot;&quot;&quot;Get&#39;s a list of prefix with respect to the message.</span>
 <a id="__codelineno-0-27" name="__codelineno-0-27"></a>
 <a id="__codelineno-0-28" name="__codelineno-0-28"></a><span class="sd">    Parameters</span>
@@ -1413,7 +1441,7 @@ for the <a class="autorefs autorefs-internal" href="../../clients/#wyvern.client
 <span class="normal"><a href="#__codelineno-0-59">59</a></span>
 <span class="normal"><a href="#__codelineno-0-60">60</a></span>
 <span class="normal"><a href="#__codelineno-0-61">61</a></span>
-<span class="normal"><a href="#__codelineno-0-62">62</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-49" name="__codelineno-0-49"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">process_application_commands</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">interaction</span><span class="p">:</span> <span class="s2">&quot;ApplicationCommandInteraction&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="normal"><a href="#__codelineno-0-62">62</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-49" name="__codelineno-0-49"></a><span class="k">async</span> <span class="k">def</span> <span class="nf">process_application_commands</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">interaction</span><span class="p">:</span> <span class="n">ApplicationCommandInteraction</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <a id="__codelineno-0-50" name="__codelineno-0-50"></a>    <span class="sd">&quot;&quot;&quot;Processes application command interactions for app commands.</span>
 <a id="__codelineno-0-51" name="__codelineno-0-51"></a>
 <a id="__codelineno-0-52" name="__codelineno-0-52"></a><span class="sd">    Parameters</span>

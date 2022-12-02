@@ -12,6 +12,8 @@
         <meta name="author" content="sarth">
       
       
+        <link rel="canonical" href="https://sarthhh.github.io/wyvern/api_reference/plugins/">
+      
       <link rel="icon" href="../../assets/wyvern.png">
       <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
     
@@ -48,6 +50,32 @@
       
 
     
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="plugins - wyvern" >
+      
+        <meta  property="og:description"  content="Documentation for the Discord API wrapper, wyvern." >
+      
+        <meta  property="og:image"  content="https://sarthhh.github.io/wyvern/assets/images/social/api_reference/plugins.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://sarthhh.github.io/wyvern/api_reference/plugins/" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="plugins - wyvern" >
+      
+        <meta  name="twitter:description"  content="Documentation for the Discord API wrapper, wyvern." >
+      
+        <meta  name="twitter:image"  content="https://sarthhh.github.io/wyvern/assets/images/social/api_reference/plugins.png" >
+      
     
     
   </head>
@@ -1163,7 +1191,8 @@
 
         <details class="quote">
           <summary>Source code in <code>wyvern/plugins.py</code></summary>
-          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-13">13</a></span>
+          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-12">12</a></span>
+<span class="normal"><a href="#__codelineno-0-13">13</a></span>
 <span class="normal"><a href="#__codelineno-0-14">14</a></span>
 <span class="normal"><a href="#__codelineno-0-15">15</a></span>
 <span class="normal"><a href="#__codelineno-0-16">16</a></span>
@@ -1218,17 +1247,18 @@
 <span class="normal"><a href="#__codelineno-0-65">65</a></span>
 <span class="normal"><a href="#__codelineno-0-66">66</a></span>
 <span class="normal"><a href="#__codelineno-0-67">67</a></span>
-<span class="normal"><a href="#__codelineno-0-68">68</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="k">class</span> <span class="nc">Plugin</span><span class="p">:</span>
-<a id="__codelineno-0-14" name="__codelineno-0-14"></a>    <span class="sd">&quot;&quot;&quot;Plugins for extendibility.</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15"></a>
-<a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="sd">    Parameters</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17"></a><span class="sd">    ----------</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18"></a>
-<a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="sd">    name: str</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="sd">        Name of the plugin.</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="sd">    description : str | None</span>
-<a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="sd">        Description of the plugin.</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23"></a><span class="sd">    &quot;&quot;&quot;</span>
+<span class="normal"><a href="#__codelineno-0-68">68</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-12" name="__codelineno-0-12"></a><span class="k">class</span> <span class="nc">Plugin</span><span class="p">:</span>
+<a id="__codelineno-0-13" name="__codelineno-0-13"></a>    <span class="sd">&quot;&quot;&quot;Plugins for extendibility.</span>
+<a id="__codelineno-0-14" name="__codelineno-0-14"></a>
+<a id="__codelineno-0-15" name="__codelineno-0-15"></a><span class="sd">    Parameters</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16"></a><span class="sd">    ----------</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17"></a>
+<a id="__codelineno-0-18" name="__codelineno-0-18"></a><span class="sd">    name: str</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19"></a><span class="sd">        Name of the plugin.</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20"></a><span class="sd">    description : str | None</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21"></a><span class="sd">        Description of the plugin.</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22"></a><span class="sd">    &quot;&quot;&quot;</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23"></a>
 <a id="__codelineno-0-24" name="__codelineno-0-24"></a>    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span>
 <a id="__codelineno-0-25" name="__codelineno-0-25"></a>    <span class="sd">&quot;&quot;&quot;Name of the plugin.&quot;&quot;&quot;</span>
 <a id="__codelineno-0-26" name="__codelineno-0-26"></a>    <span class="n">description</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span> <span class="o">=</span> <span class="kc">None</span>

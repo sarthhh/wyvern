@@ -150,7 +150,7 @@
           
           <input class="md-option" data-md-color-media="" data-md-color-scheme="light" data-md-color-primary="" data-md-color-accent=""  aria-label="Light Mode"  type="radio" name="__palette" id="__palette_1">
           
-            <label class="md-header__button md-icon" title="Light Mode" for="__palette_2" hidden>
+            <label class="md-header__button md-icon" title="Light Mode" for="__palette_3" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
             </label>
           
@@ -162,6 +162,16 @@
           
             <label class="md-header__button md-icon" title="Dark Mode" for="__palette_1" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+            </label>
+          
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="pink" data-md-color-primary="pink" data-md-color-accent=""  aria-label="Light Mode 2"  type="radio" name="__palette" id="__palette_3">
+          
+            <label class="md-header__button md-icon" title="Light Mode 2" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
             </label>
           
         
@@ -926,6 +936,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#wyvern.models.members.Member.user" class="md-nav__link">
+    user
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#wyvern.models.members.Member.display_avatar" class="md-nav__link">
     display_avatar()
   </a>
@@ -1296,6 +1313,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#wyvern.models.members.Member.user" class="md-nav__link">
+    user
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#wyvern.models.members.Member.display_avatar" class="md-nav__link">
     display_avatar()
   </a>
@@ -1437,65 +1461,69 @@
 <span class="normal"><a href="#__codelineno-0-68">68</a></span>
 <span class="normal"><a href="#__codelineno-0-69">69</a></span>
 <span class="normal"><a href="#__codelineno-0-70">70</a></span>
-<span class="normal"><a href="#__codelineno-0-71">71</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="nd">@attrs</span><span class="o">.</span><span class="n">define</span><span class="p">(</span><span class="n">kw_only</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">slots</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="nb">repr</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="normal"><a href="#__codelineno-0-71">71</a></span>
+<span class="normal"><a href="#__codelineno-0-72">72</a></span>
+<span class="normal"><a href="#__codelineno-0-73">73</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-13" name="__codelineno-0-13"></a><span class="nd">@attrs</span><span class="o">.</span><span class="n">define</span><span class="p">(</span><span class="n">kw_only</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">slots</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="nb">repr</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <a id="__codelineno-0-14" name="__codelineno-0-14"></a><span class="k">class</span> <span class="nc">Member</span><span class="p">(</span><span class="n">User</span><span class="p">):</span>
-<a id="__codelineno-0-15" name="__codelineno-0-15"></a>    <span class="n">guild_id</span><span class="p">:</span> <span class="n">Snowflake</span>
-<a id="__codelineno-0-16" name="__codelineno-0-16"></a>    <span class="sd">&quot;&quot;&quot;ID of the guild this member belongs to.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-17" name="__codelineno-0-17"></a>    <span class="n">nickname</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span>
-<a id="__codelineno-0-18" name="__codelineno-0-18"></a>    <span class="sd">&quot;&quot;&quot;Nickname of the member, if any.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-19" name="__codelineno-0-19"></a>    <span class="n">role_ids</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Snowflake</span><span class="p">]</span>
-<a id="__codelineno-0-20" name="__codelineno-0-20"></a>    <span class="sd">&quot;&quot;&quot;List of role ids.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-21" name="__codelineno-0-21"></a>    <span class="n">joined_at</span><span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span>
-<a id="__codelineno-0-22" name="__codelineno-0-22"></a>    <span class="sd">&quot;&quot;&quot;Datetime on which the member joined the guild.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-23" name="__codelineno-0-23"></a>    <span class="n">premium_since</span><span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span> <span class="o">|</span> <span class="kc">None</span>
-<a id="__codelineno-0-24" name="__codelineno-0-24"></a>    <span class="sd">&quot;&quot;&quot;Datetime since member has been boosting the guild.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-25" name="__codelineno-0-25"></a>    <span class="n">deaf</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">|</span> <span class="kc">None</span>
-<a id="__codelineno-0-26" name="__codelineno-0-26"></a>    <span class="sd">&quot;&quot;&quot;True if member is deafened.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-27" name="__codelineno-0-27"></a>    <span class="n">mute</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">|</span> <span class="kc">None</span>
-<a id="__codelineno-0-28" name="__codelineno-0-28"></a>    <span class="sd">&quot;&quot;&quot;True if member is muted.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-29" name="__codelineno-0-29"></a>    <span class="n">pending</span><span class="p">:</span> <span class="nb">bool</span>
-<a id="__codelineno-0-30" name="__codelineno-0-30"></a>    <span class="sd">&quot;&quot;&quot;True if member is in pending state.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-31" name="__codelineno-0-31"></a>    <span class="n">communication_disabled_until</span><span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span> <span class="o">|</span> <span class="kc">None</span>
-<a id="__codelineno-0-32" name="__codelineno-0-32"></a>    <span class="sd">&quot;&quot;&quot;Timeout for the member.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-33" name="__codelineno-0-33"></a>    <span class="n">guild_avatar_hash</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span>
-<a id="__codelineno-0-34" name="__codelineno-0-34"></a>    <span class="sd">&quot;&quot;&quot;Avatar hash for the guild.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-35" name="__codelineno-0-35"></a>
-<a id="__codelineno-0-36" name="__codelineno-0-36"></a>    <span class="k">def</span> <span class="nf">update_state</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;Member&quot;</span> <span class="o">|</span> <span class="kc">None</span><span class="p">:</span>
-<a id="__codelineno-0-37" name="__codelineno-0-37"></a>        <span class="k">return</span> <span class="n">member</span> <span class="k">if</span> <span class="p">(</span><span class="n">member</span> <span class="o">:=</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">members</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">guild_id</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">id</span><span class="p">))</span> <span class="k">else</span> <span class="kc">None</span>
-<a id="__codelineno-0-38" name="__codelineno-0-38"></a>
-<a id="__codelineno-0-39" name="__codelineno-0-39"></a>    <span class="nd">@property</span>
-<a id="__codelineno-0-40" name="__codelineno-0-40"></a>    <span class="k">def</span> <span class="nf">display_avatar</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Avatar</span><span class="p">:</span>
-<a id="__codelineno-0-41" name="__codelineno-0-41"></a>        <span class="sd">&quot;&quot;&quot;</span>
-<a id="__codelineno-0-42" name="__codelineno-0-42"></a><span class="sd">        Returns</span>
-<a id="__codelineno-0-43" name="__codelineno-0-43"></a><span class="sd">        -------</span>
-<a id="__codelineno-0-44" name="__codelineno-0-44"></a><span class="sd">        str</span>
-<a id="__codelineno-0-45" name="__codelineno-0-45"></a><span class="sd">            Member&#39;s visible avatar.</span>
-<a id="__codelineno-0-46" name="__codelineno-0-46"></a><span class="sd">        &quot;&quot;&quot;</span>
-<a id="__codelineno-0-47" name="__codelineno-0-47"></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">guild_avatar</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">avatar</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">default_avatar</span>
-<a id="__codelineno-0-48" name="__codelineno-0-48"></a>
-<a id="__codelineno-0-49" name="__codelineno-0-49"></a>    <span class="nd">@property</span>
-<a id="__codelineno-0-50" name="__codelineno-0-50"></a>    <span class="k">def</span> <span class="nf">display_name</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-<a id="__codelineno-0-51" name="__codelineno-0-51"></a>        <span class="sd">&quot;&quot;&quot;</span>
-<a id="__codelineno-0-52" name="__codelineno-0-52"></a><span class="sd">        Returns</span>
-<a id="__codelineno-0-53" name="__codelineno-0-53"></a><span class="sd">        -------</span>
-<a id="__codelineno-0-54" name="__codelineno-0-54"></a><span class="sd">        str</span>
-<a id="__codelineno-0-55" name="__codelineno-0-55"></a><span class="sd">            Member&#39;s visible name.</span>
-<a id="__codelineno-0-56" name="__codelineno-0-56"></a><span class="sd">        &quot;&quot;&quot;</span>
-<a id="__codelineno-0-57" name="__codelineno-0-57"></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">nickname</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">username</span>
-<a id="__codelineno-0-58" name="__codelineno-0-58"></a>
-<a id="__codelineno-0-59" name="__codelineno-0-59"></a>    <span class="nd">@property</span>
-<a id="__codelineno-0-60" name="__codelineno-0-60"></a>    <span class="k">def</span> <span class="nf">guild_avatar</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Avatar</span> <span class="o">|</span> <span class="kc">None</span><span class="p">:</span>
-<a id="__codelineno-0-61" name="__codelineno-0-61"></a>        <span class="sd">&quot;&quot;&quot;</span>
-<a id="__codelineno-0-62" name="__codelineno-0-62"></a><span class="sd">        Returns</span>
-<a id="__codelineno-0-63" name="__codelineno-0-63"></a><span class="sd">        -------</span>
-<a id="__codelineno-0-64" name="__codelineno-0-64"></a><span class="sd">        None | wyvern.Avatar</span>
-<a id="__codelineno-0-65" name="__codelineno-0-65"></a><span class="sd">            The user&#39;s guild avatar.</span>
-<a id="__codelineno-0-66" name="__codelineno-0-66"></a><span class="sd">        &quot;&quot;&quot;</span>
-<a id="__codelineno-0-67" name="__codelineno-0-67"></a>        <span class="k">return</span> <span class="p">(</span>
-<a id="__codelineno-0-68" name="__codelineno-0-68"></a>            <span class="n">Avatar</span><span class="p">(</span><span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">AvatarType</span><span class="o">.</span><span class="n">GUILD</span><span class="p">,</span> <span class="nb">hash</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">guild_avatar_hash</span><span class="p">)</span>
-<a id="__codelineno-0-69" name="__codelineno-0-69"></a>            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">guild_avatar_hash</span>
-<a id="__codelineno-0-70" name="__codelineno-0-70"></a>            <span class="k">else</span> <span class="kc">None</span>
-<a id="__codelineno-0-71" name="__codelineno-0-71"></a>        <span class="p">)</span>
+<a id="__codelineno-0-15" name="__codelineno-0-15"></a>    <span class="n">user</span><span class="p">:</span> <span class="n">User</span>
+<a id="__codelineno-0-16" name="__codelineno-0-16"></a>    <span class="sd">&quot;&quot;&quot;User of the member.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-17" name="__codelineno-0-17"></a>    <span class="n">guild_id</span><span class="p">:</span> <span class="n">Snowflake</span>
+<a id="__codelineno-0-18" name="__codelineno-0-18"></a>    <span class="sd">&quot;&quot;&quot;ID of the guild this member belongs to.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-19" name="__codelineno-0-19"></a>    <span class="n">nickname</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span>
+<a id="__codelineno-0-20" name="__codelineno-0-20"></a>    <span class="sd">&quot;&quot;&quot;Nickname of the member, if any.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-21" name="__codelineno-0-21"></a>    <span class="n">role_ids</span><span class="p">:</span> <span class="nb">list</span><span class="p">[</span><span class="n">Snowflake</span><span class="p">]</span>
+<a id="__codelineno-0-22" name="__codelineno-0-22"></a>    <span class="sd">&quot;&quot;&quot;List of role ids.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-23" name="__codelineno-0-23"></a>    <span class="n">joined_at</span><span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span>
+<a id="__codelineno-0-24" name="__codelineno-0-24"></a>    <span class="sd">&quot;&quot;&quot;Datetime on which the member joined the guild.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-25" name="__codelineno-0-25"></a>    <span class="n">premium_since</span><span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span> <span class="o">|</span> <span class="kc">None</span>
+<a id="__codelineno-0-26" name="__codelineno-0-26"></a>    <span class="sd">&quot;&quot;&quot;Datetime since member has been boosting the guild.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-27" name="__codelineno-0-27"></a>    <span class="n">deaf</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">|</span> <span class="kc">None</span>
+<a id="__codelineno-0-28" name="__codelineno-0-28"></a>    <span class="sd">&quot;&quot;&quot;True if member is deafened.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-29" name="__codelineno-0-29"></a>    <span class="n">mute</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">|</span> <span class="kc">None</span>
+<a id="__codelineno-0-30" name="__codelineno-0-30"></a>    <span class="sd">&quot;&quot;&quot;True if member is muted.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-31" name="__codelineno-0-31"></a>    <span class="n">pending</span><span class="p">:</span> <span class="nb">bool</span>
+<a id="__codelineno-0-32" name="__codelineno-0-32"></a>    <span class="sd">&quot;&quot;&quot;True if member is in pending state.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-33" name="__codelineno-0-33"></a>    <span class="n">communication_disabled_until</span><span class="p">:</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span> <span class="o">|</span> <span class="kc">None</span>
+<a id="__codelineno-0-34" name="__codelineno-0-34"></a>    <span class="sd">&quot;&quot;&quot;Timeout for the member.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-35" name="__codelineno-0-35"></a>    <span class="n">guild_avatar_hash</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="kc">None</span>
+<a id="__codelineno-0-36" name="__codelineno-0-36"></a>    <span class="sd">&quot;&quot;&quot;Avatar hash for the guild.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-37" name="__codelineno-0-37"></a>
+<a id="__codelineno-0-38" name="__codelineno-0-38"></a>    <span class="k">def</span> <span class="nf">update_state</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;Member&quot;</span> <span class="o">|</span> <span class="kc">None</span><span class="p">:</span>
+<a id="__codelineno-0-39" name="__codelineno-0-39"></a>        <span class="k">return</span> <span class="n">member</span> <span class="k">if</span> <span class="p">(</span><span class="n">member</span> <span class="o">:=</span> <span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="o">.</span><span class="n">members</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">guild_id</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">id</span><span class="p">))</span> <span class="k">else</span> <span class="kc">None</span>
+<a id="__codelineno-0-40" name="__codelineno-0-40"></a>
+<a id="__codelineno-0-41" name="__codelineno-0-41"></a>    <span class="nd">@property</span>
+<a id="__codelineno-0-42" name="__codelineno-0-42"></a>    <span class="k">def</span> <span class="nf">display_avatar</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Avatar</span><span class="p">:</span>
+<a id="__codelineno-0-43" name="__codelineno-0-43"></a>        <span class="sd">&quot;&quot;&quot;</span>
+<a id="__codelineno-0-44" name="__codelineno-0-44"></a><span class="sd">        Returns</span>
+<a id="__codelineno-0-45" name="__codelineno-0-45"></a><span class="sd">        -------</span>
+<a id="__codelineno-0-46" name="__codelineno-0-46"></a><span class="sd">        str</span>
+<a id="__codelineno-0-47" name="__codelineno-0-47"></a><span class="sd">            Member&#39;s visible avatar.</span>
+<a id="__codelineno-0-48" name="__codelineno-0-48"></a><span class="sd">        &quot;&quot;&quot;</span>
+<a id="__codelineno-0-49" name="__codelineno-0-49"></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">guild_avatar</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">avatar</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">default_avatar</span>
+<a id="__codelineno-0-50" name="__codelineno-0-50"></a>
+<a id="__codelineno-0-51" name="__codelineno-0-51"></a>    <span class="nd">@property</span>
+<a id="__codelineno-0-52" name="__codelineno-0-52"></a>    <span class="k">def</span> <span class="nf">display_name</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<a id="__codelineno-0-53" name="__codelineno-0-53"></a>        <span class="sd">&quot;&quot;&quot;</span>
+<a id="__codelineno-0-54" name="__codelineno-0-54"></a><span class="sd">        Returns</span>
+<a id="__codelineno-0-55" name="__codelineno-0-55"></a><span class="sd">        -------</span>
+<a id="__codelineno-0-56" name="__codelineno-0-56"></a><span class="sd">        str</span>
+<a id="__codelineno-0-57" name="__codelineno-0-57"></a><span class="sd">            Member&#39;s visible name.</span>
+<a id="__codelineno-0-58" name="__codelineno-0-58"></a><span class="sd">        &quot;&quot;&quot;</span>
+<a id="__codelineno-0-59" name="__codelineno-0-59"></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">nickname</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">username</span>
+<a id="__codelineno-0-60" name="__codelineno-0-60"></a>
+<a id="__codelineno-0-61" name="__codelineno-0-61"></a>    <span class="nd">@property</span>
+<a id="__codelineno-0-62" name="__codelineno-0-62"></a>    <span class="k">def</span> <span class="nf">guild_avatar</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Avatar</span> <span class="o">|</span> <span class="kc">None</span><span class="p">:</span>
+<a id="__codelineno-0-63" name="__codelineno-0-63"></a>        <span class="sd">&quot;&quot;&quot;</span>
+<a id="__codelineno-0-64" name="__codelineno-0-64"></a><span class="sd">        Returns</span>
+<a id="__codelineno-0-65" name="__codelineno-0-65"></a><span class="sd">        -------</span>
+<a id="__codelineno-0-66" name="__codelineno-0-66"></a><span class="sd">        None | wyvern.Avatar</span>
+<a id="__codelineno-0-67" name="__codelineno-0-67"></a><span class="sd">            The user&#39;s guild avatar.</span>
+<a id="__codelineno-0-68" name="__codelineno-0-68"></a><span class="sd">        &quot;&quot;&quot;</span>
+<a id="__codelineno-0-69" name="__codelineno-0-69"></a>        <span class="k">return</span> <span class="p">(</span>
+<a id="__codelineno-0-70" name="__codelineno-0-70"></a>            <span class="n">Avatar</span><span class="p">(</span><span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">AvatarType</span><span class="o">.</span><span class="n">GUILD</span><span class="p">,</span> <span class="nb">hash</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">guild_avatar_hash</span><span class="p">)</span>
+<a id="__codelineno-0-71" name="__codelineno-0-71"></a>            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">guild_avatar_hash</span>
+<a id="__codelineno-0-72" name="__codelineno-0-72"></a>            <span class="k">else</span> <span class="kc">None</span>
+<a id="__codelineno-0-73" name="__codelineno-0-73"></a>        <span class="p">)</span>
 </code></pre></div></td></tr></table></div>
         </details>
 
@@ -1719,6 +1747,27 @@
 
 </div>
 
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="wyvern.models.members.Member.user" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">user</span><span class="p">:</span> <span class="n">User</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>User of the member.</p>
+  </div>
+
+</div>
+
 
 
 <div class="doc doc-object doc-function">
@@ -1758,23 +1807,23 @@
 
       <details class="quote">
         <summary>Source code in <code>wyvern/models/members.py</code></summary>
-        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-39">39</a></span>
-<span class="normal"><a href="#__codelineno-0-40">40</a></span>
-<span class="normal"><a href="#__codelineno-0-41">41</a></span>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-41">41</a></span>
 <span class="normal"><a href="#__codelineno-0-42">42</a></span>
 <span class="normal"><a href="#__codelineno-0-43">43</a></span>
 <span class="normal"><a href="#__codelineno-0-44">44</a></span>
 <span class="normal"><a href="#__codelineno-0-45">45</a></span>
 <span class="normal"><a href="#__codelineno-0-46">46</a></span>
-<span class="normal"><a href="#__codelineno-0-47">47</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-39" name="__codelineno-0-39"></a><span class="nd">@property</span>
-<a id="__codelineno-0-40" name="__codelineno-0-40"></a><span class="k">def</span> <span class="nf">display_avatar</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Avatar</span><span class="p">:</span>
-<a id="__codelineno-0-41" name="__codelineno-0-41"></a>    <span class="sd">&quot;&quot;&quot;</span>
-<a id="__codelineno-0-42" name="__codelineno-0-42"></a><span class="sd">    Returns</span>
-<a id="__codelineno-0-43" name="__codelineno-0-43"></a><span class="sd">    -------</span>
-<a id="__codelineno-0-44" name="__codelineno-0-44"></a><span class="sd">    str</span>
-<a id="__codelineno-0-45" name="__codelineno-0-45"></a><span class="sd">        Member&#39;s visible avatar.</span>
-<a id="__codelineno-0-46" name="__codelineno-0-46"></a><span class="sd">    &quot;&quot;&quot;</span>
-<a id="__codelineno-0-47" name="__codelineno-0-47"></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">guild_avatar</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">avatar</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">default_avatar</span>
+<span class="normal"><a href="#__codelineno-0-47">47</a></span>
+<span class="normal"><a href="#__codelineno-0-48">48</a></span>
+<span class="normal"><a href="#__codelineno-0-49">49</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-41" name="__codelineno-0-41"></a><span class="nd">@property</span>
+<a id="__codelineno-0-42" name="__codelineno-0-42"></a><span class="k">def</span> <span class="nf">display_avatar</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Avatar</span><span class="p">:</span>
+<a id="__codelineno-0-43" name="__codelineno-0-43"></a>    <span class="sd">&quot;&quot;&quot;</span>
+<a id="__codelineno-0-44" name="__codelineno-0-44"></a><span class="sd">    Returns</span>
+<a id="__codelineno-0-45" name="__codelineno-0-45"></a><span class="sd">    -------</span>
+<a id="__codelineno-0-46" name="__codelineno-0-46"></a><span class="sd">    str</span>
+<a id="__codelineno-0-47" name="__codelineno-0-47"></a><span class="sd">        Member&#39;s visible avatar.</span>
+<a id="__codelineno-0-48" name="__codelineno-0-48"></a><span class="sd">    &quot;&quot;&quot;</span>
+<a id="__codelineno-0-49" name="__codelineno-0-49"></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">guild_avatar</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">avatar</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">default_avatar</span>
 </code></pre></div></td></tr></table></div>
       </details>
   </div>
@@ -1818,23 +1867,23 @@
 
       <details class="quote">
         <summary>Source code in <code>wyvern/models/members.py</code></summary>
-        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-49">49</a></span>
-<span class="normal"><a href="#__codelineno-0-50">50</a></span>
-<span class="normal"><a href="#__codelineno-0-51">51</a></span>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-51">51</a></span>
 <span class="normal"><a href="#__codelineno-0-52">52</a></span>
 <span class="normal"><a href="#__codelineno-0-53">53</a></span>
 <span class="normal"><a href="#__codelineno-0-54">54</a></span>
 <span class="normal"><a href="#__codelineno-0-55">55</a></span>
 <span class="normal"><a href="#__codelineno-0-56">56</a></span>
-<span class="normal"><a href="#__codelineno-0-57">57</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-49" name="__codelineno-0-49"></a><span class="nd">@property</span>
-<a id="__codelineno-0-50" name="__codelineno-0-50"></a><span class="k">def</span> <span class="nf">display_name</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
-<a id="__codelineno-0-51" name="__codelineno-0-51"></a>    <span class="sd">&quot;&quot;&quot;</span>
-<a id="__codelineno-0-52" name="__codelineno-0-52"></a><span class="sd">    Returns</span>
-<a id="__codelineno-0-53" name="__codelineno-0-53"></a><span class="sd">    -------</span>
-<a id="__codelineno-0-54" name="__codelineno-0-54"></a><span class="sd">    str</span>
-<a id="__codelineno-0-55" name="__codelineno-0-55"></a><span class="sd">        Member&#39;s visible name.</span>
-<a id="__codelineno-0-56" name="__codelineno-0-56"></a><span class="sd">    &quot;&quot;&quot;</span>
-<a id="__codelineno-0-57" name="__codelineno-0-57"></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">nickname</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">username</span>
+<span class="normal"><a href="#__codelineno-0-57">57</a></span>
+<span class="normal"><a href="#__codelineno-0-58">58</a></span>
+<span class="normal"><a href="#__codelineno-0-59">59</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-51" name="__codelineno-0-51"></a><span class="nd">@property</span>
+<a id="__codelineno-0-52" name="__codelineno-0-52"></a><span class="k">def</span> <span class="nf">display_name</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<a id="__codelineno-0-53" name="__codelineno-0-53"></a>    <span class="sd">&quot;&quot;&quot;</span>
+<a id="__codelineno-0-54" name="__codelineno-0-54"></a><span class="sd">    Returns</span>
+<a id="__codelineno-0-55" name="__codelineno-0-55"></a><span class="sd">    -------</span>
+<a id="__codelineno-0-56" name="__codelineno-0-56"></a><span class="sd">    str</span>
+<a id="__codelineno-0-57" name="__codelineno-0-57"></a><span class="sd">        Member&#39;s visible name.</span>
+<a id="__codelineno-0-58" name="__codelineno-0-58"></a><span class="sd">    &quot;&quot;&quot;</span>
+<a id="__codelineno-0-59" name="__codelineno-0-59"></a>    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">nickname</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">username</span>
 </code></pre></div></td></tr></table></div>
       </details>
   </div>
@@ -1878,9 +1927,7 @@
 
       <details class="quote">
         <summary>Source code in <code>wyvern/models/members.py</code></summary>
-        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-59">59</a></span>
-<span class="normal"><a href="#__codelineno-0-60">60</a></span>
-<span class="normal"><a href="#__codelineno-0-61">61</a></span>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-61">61</a></span>
 <span class="normal"><a href="#__codelineno-0-62">62</a></span>
 <span class="normal"><a href="#__codelineno-0-63">63</a></span>
 <span class="normal"><a href="#__codelineno-0-64">64</a></span>
@@ -1890,19 +1937,21 @@
 <span class="normal"><a href="#__codelineno-0-68">68</a></span>
 <span class="normal"><a href="#__codelineno-0-69">69</a></span>
 <span class="normal"><a href="#__codelineno-0-70">70</a></span>
-<span class="normal"><a href="#__codelineno-0-71">71</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-59" name="__codelineno-0-59"></a><span class="nd">@property</span>
-<a id="__codelineno-0-60" name="__codelineno-0-60"></a><span class="k">def</span> <span class="nf">guild_avatar</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Avatar</span> <span class="o">|</span> <span class="kc">None</span><span class="p">:</span>
-<a id="__codelineno-0-61" name="__codelineno-0-61"></a>    <span class="sd">&quot;&quot;&quot;</span>
-<a id="__codelineno-0-62" name="__codelineno-0-62"></a><span class="sd">    Returns</span>
-<a id="__codelineno-0-63" name="__codelineno-0-63"></a><span class="sd">    -------</span>
-<a id="__codelineno-0-64" name="__codelineno-0-64"></a><span class="sd">    None | wyvern.Avatar</span>
-<a id="__codelineno-0-65" name="__codelineno-0-65"></a><span class="sd">        The user&#39;s guild avatar.</span>
-<a id="__codelineno-0-66" name="__codelineno-0-66"></a><span class="sd">    &quot;&quot;&quot;</span>
-<a id="__codelineno-0-67" name="__codelineno-0-67"></a>    <span class="k">return</span> <span class="p">(</span>
-<a id="__codelineno-0-68" name="__codelineno-0-68"></a>        <span class="n">Avatar</span><span class="p">(</span><span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">AvatarType</span><span class="o">.</span><span class="n">GUILD</span><span class="p">,</span> <span class="nb">hash</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">guild_avatar_hash</span><span class="p">)</span>
-<a id="__codelineno-0-69" name="__codelineno-0-69"></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">guild_avatar_hash</span>
-<a id="__codelineno-0-70" name="__codelineno-0-70"></a>        <span class="k">else</span> <span class="kc">None</span>
-<a id="__codelineno-0-71" name="__codelineno-0-71"></a>    <span class="p">)</span>
+<span class="normal"><a href="#__codelineno-0-71">71</a></span>
+<span class="normal"><a href="#__codelineno-0-72">72</a></span>
+<span class="normal"><a href="#__codelineno-0-73">73</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-61" name="__codelineno-0-61"></a><span class="nd">@property</span>
+<a id="__codelineno-0-62" name="__codelineno-0-62"></a><span class="k">def</span> <span class="nf">guild_avatar</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Avatar</span> <span class="o">|</span> <span class="kc">None</span><span class="p">:</span>
+<a id="__codelineno-0-63" name="__codelineno-0-63"></a>    <span class="sd">&quot;&quot;&quot;</span>
+<a id="__codelineno-0-64" name="__codelineno-0-64"></a><span class="sd">    Returns</span>
+<a id="__codelineno-0-65" name="__codelineno-0-65"></a><span class="sd">    -------</span>
+<a id="__codelineno-0-66" name="__codelineno-0-66"></a><span class="sd">    None | wyvern.Avatar</span>
+<a id="__codelineno-0-67" name="__codelineno-0-67"></a><span class="sd">        The user&#39;s guild avatar.</span>
+<a id="__codelineno-0-68" name="__codelineno-0-68"></a><span class="sd">    &quot;&quot;&quot;</span>
+<a id="__codelineno-0-69" name="__codelineno-0-69"></a>    <span class="k">return</span> <span class="p">(</span>
+<a id="__codelineno-0-70" name="__codelineno-0-70"></a>        <span class="n">Avatar</span><span class="p">(</span><span class="n">client</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">client</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="n">AvatarType</span><span class="o">.</span><span class="n">GUILD</span><span class="p">,</span> <span class="nb">hash</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">guild_avatar_hash</span><span class="p">)</span>
+<a id="__codelineno-0-71" name="__codelineno-0-71"></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">guild_avatar_hash</span>
+<a id="__codelineno-0-72" name="__codelineno-0-72"></a>        <span class="k">else</span> <span class="kc">None</span>
+<a id="__codelineno-0-73" name="__codelineno-0-73"></a>    <span class="p">)</span>
 </code></pre></div></td></tr></table></div>
       </details>
   </div>

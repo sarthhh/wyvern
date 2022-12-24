@@ -150,7 +150,7 @@
           
           <input class="md-option" data-md-color-media="" data-md-color-scheme="light" data-md-color-primary="" data-md-color-accent=""  aria-label="Light Mode"  type="radio" name="__palette" id="__palette_1">
           
-            <label class="md-header__button md-icon" title="Light Mode" for="__palette_2" hidden>
+            <label class="md-header__button md-icon" title="Light Mode" for="__palette_3" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5c-.84 0-1.65.15-2.39.42L12 2M3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29L3.34 7m.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14L3.36 17M20.65 7l-1.77 3.79a7.023 7.023 0 0 0-2.38-4.15l4.15.36m-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29L20.64 17M12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44L12 22Z"/></svg>
             </label>
           
@@ -162,6 +162,16 @@
           
             <label class="md-header__button md-icon" title="Dark Mode" for="__palette_1" hidden>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3 3.19.09m3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95 2.06.05m-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31Z"/></svg>
+            </label>
+          
+        
+          
+          
+          
+          <input class="md-option" data-md-color-media="" data-md-color-scheme="pink" data-md-color-primary="pink" data-md-color-accent=""  aria-label="Light Mode 2"  type="radio" name="__palette" id="__palette_3">
+          
+            <label class="md-header__button md-icon" title="Light Mode 2" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
             </label>
           
         
@@ -1206,39 +1216,7 @@
 
         <details class="quote">
           <summary>Source code in <code>wyvern/clients.py</code></summary>
-          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-265">265</a></span>
-<span class="normal"><a href="#__codelineno-0-266">266</a></span>
-<span class="normal"><a href="#__codelineno-0-267">267</a></span>
-<span class="normal"><a href="#__codelineno-0-268">268</a></span>
-<span class="normal"><a href="#__codelineno-0-269">269</a></span>
-<span class="normal"><a href="#__codelineno-0-270">270</a></span>
-<span class="normal"><a href="#__codelineno-0-271">271</a></span>
-<span class="normal"><a href="#__codelineno-0-272">272</a></span>
-<span class="normal"><a href="#__codelineno-0-273">273</a></span>
-<span class="normal"><a href="#__codelineno-0-274">274</a></span>
-<span class="normal"><a href="#__codelineno-0-275">275</a></span>
-<span class="normal"><a href="#__codelineno-0-276">276</a></span>
-<span class="normal"><a href="#__codelineno-0-277">277</a></span>
-<span class="normal"><a href="#__codelineno-0-278">278</a></span>
-<span class="normal"><a href="#__codelineno-0-279">279</a></span>
-<span class="normal"><a href="#__codelineno-0-280">280</a></span>
-<span class="normal"><a href="#__codelineno-0-281">281</a></span>
-<span class="normal"><a href="#__codelineno-0-282">282</a></span>
-<span class="normal"><a href="#__codelineno-0-283">283</a></span>
-<span class="normal"><a href="#__codelineno-0-284">284</a></span>
-<span class="normal"><a href="#__codelineno-0-285">285</a></span>
-<span class="normal"><a href="#__codelineno-0-286">286</a></span>
-<span class="normal"><a href="#__codelineno-0-287">287</a></span>
-<span class="normal"><a href="#__codelineno-0-288">288</a></span>
-<span class="normal"><a href="#__codelineno-0-289">289</a></span>
-<span class="normal"><a href="#__codelineno-0-290">290</a></span>
-<span class="normal"><a href="#__codelineno-0-291">291</a></span>
-<span class="normal"><a href="#__codelineno-0-292">292</a></span>
-<span class="normal"><a href="#__codelineno-0-293">293</a></span>
-<span class="normal"><a href="#__codelineno-0-294">294</a></span>
-<span class="normal"><a href="#__codelineno-0-295">295</a></span>
-<span class="normal"><a href="#__codelineno-0-296">296</a></span>
-<span class="normal"><a href="#__codelineno-0-297">297</a></span>
+          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-297">297</a></span>
 <span class="normal"><a href="#__codelineno-0-298">298</a></span>
 <span class="normal"><a href="#__codelineno-0-299">299</a></span>
 <span class="normal"><a href="#__codelineno-0-300">300</a></span>
@@ -1303,104 +1281,134 @@
 <span class="normal"><a href="#__codelineno-0-359">359</a></span>
 <span class="normal"><a href="#__codelineno-0-360">360</a></span>
 <span class="normal"><a href="#__codelineno-0-361">361</a></span>
-<span class="normal"><a href="#__codelineno-0-362">362</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-265" name="__codelineno-0-265"></a><span class="k">class</span> <span class="nc">CommandsClient</span><span class="p">(</span><span class="n">GatewayClient</span><span class="p">,</span> <span class="n">commands</span><span class="o">.</span><span class="n">CommandHandler</span><span class="p">):</span>
-<a id="__codelineno-0-266" name="__codelineno-0-266"></a>    <span class="sd">&quot;&quot;&quot;Implementation of the [wyvern.GatewayClient][] class with a command handler.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-267" name="__codelineno-0-267"></a>
-<a id="__codelineno-0-268" name="__codelineno-0-268"></a>    <span class="n">slash_commands</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="s2">&quot;commands.slash_commands.SlashCommand&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
-<a id="__codelineno-0-269" name="__codelineno-0-269"></a>    <span class="sd">&quot;&quot;&quot;List of slash commands attached to the client in code.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-270" name="__codelineno-0-270"></a>    <span class="n">slash_groups</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="s2">&quot;commands.slash_commands.SlashGroup&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
-<a id="__codelineno-0-271" name="__codelineno-0-271"></a>    <span class="sd">&quot;&quot;&quot;List of slash command groups attached to the client in code.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-272" name="__codelineno-0-272"></a>
-<a id="__codelineno-0-273" name="__codelineno-0-273"></a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">_handle_inters</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inter</span><span class="p">:</span> <span class="n">interactions</span><span class="o">.</span><span class="n">Interaction</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<a id="__codelineno-0-274" name="__codelineno-0-274"></a>        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">inter</span><span class="p">,</span> <span class="n">interactions</span><span class="o">.</span><span class="n">ApplicationCommandInteraction</span><span class="p">):</span>
-<a id="__codelineno-0-275" name="__codelineno-0-275"></a>            <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">process_application_commands</span><span class="p">(</span><span class="n">inter</span><span class="p">)</span>
-<a id="__codelineno-0-276" name="__codelineno-0-276"></a>
-<a id="__codelineno-0-277" name="__codelineno-0-277"></a>    <span class="k">def</span> <span class="nf">add_slash_command</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">command</span><span class="p">:</span> <span class="n">commands</span><span class="o">.</span><span class="n">slash_commands</span><span class="o">.</span><span class="n">SlashCommand</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<a id="__codelineno-0-278" name="__codelineno-0-278"></a>        <span class="k">if</span> <span class="p">(</span><span class="n">name</span> <span class="o">:=</span> <span class="n">command</span><span class="o">.</span><span class="n">name</span><span class="p">)</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">slash_commands</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
-<a id="__codelineno-0-279" name="__codelineno-0-279"></a>            <span class="k">raise</span> <span class="n">exceptions</span><span class="o">.</span><span class="n">CommandAlreadyExists</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;A slash command named </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> already exists.&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-280" name="__codelineno-0-280"></a>        <span class="n">_LOGGER</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Adding slash command </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> to bot.&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-281" name="__codelineno-0-281"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">slash_commands</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">command</span>
-<a id="__codelineno-0-282" name="__codelineno-0-282"></a>
-<a id="__codelineno-0-283" name="__codelineno-0-283"></a>    <span class="k">def</span> <span class="nf">add_slash_group</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">group</span><span class="p">:</span> <span class="n">commands</span><span class="o">.</span><span class="n">slash_commands</span><span class="o">.</span><span class="n">SlashGroup</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<a id="__codelineno-0-284" name="__codelineno-0-284"></a>        <span class="k">if</span> <span class="p">(</span><span class="n">name</span> <span class="o">:=</span> <span class="n">group</span><span class="o">.</span><span class="n">name</span><span class="p">)</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">slash_groups</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
-<a id="__codelineno-0-285" name="__codelineno-0-285"></a>            <span class="k">raise</span> <span class="n">exceptions</span><span class="o">.</span><span class="n">CommandAlreadyExists</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;A slash command named </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> already exists.&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-286" name="__codelineno-0-286"></a>        <span class="n">_LOGGER</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Adding slash group </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> to bot.&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-287" name="__codelineno-0-287"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">slash_groups</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">group</span>
-<a id="__codelineno-0-288" name="__codelineno-0-288"></a>
-<a id="__codelineno-0-289" name="__codelineno-0-289"></a>    <span class="nd">@typing</span><span class="o">.</span><span class="n">overload</span>
-<a id="__codelineno-0-290" name="__codelineno-0-290"></a>    <span class="k">def</span> <span class="nf">include</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">listener_or_command</span><span class="p">:</span> <span class="n">events</span><span class="o">.</span><span class="n">EventListener</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">events</span><span class="o">.</span><span class="n">EventListener</span><span class="p">:</span>
-<a id="__codelineno-0-291" name="__codelineno-0-291"></a>        <span class="o">...</span>
-<a id="__codelineno-0-292" name="__codelineno-0-292"></a>
-<a id="__codelineno-0-293" name="__codelineno-0-293"></a>    <span class="nd">@typing</span><span class="o">.</span><span class="n">overload</span>
-<a id="__codelineno-0-294" name="__codelineno-0-294"></a>    <span class="k">def</span> <span class="nf">include</span><span class="p">(</span>
-<a id="__codelineno-0-295" name="__codelineno-0-295"></a>        <span class="bp">self</span><span class="p">,</span> <span class="n">listener_or_command</span><span class="p">:</span> <span class="n">commands</span><span class="o">.</span><span class="n">slash_commands</span><span class="o">.</span><span class="n">SlashCommand</span>
-<a id="__codelineno-0-296" name="__codelineno-0-296"></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">commands</span><span class="o">.</span><span class="n">slash_commands</span><span class="o">.</span><span class="n">SlashCommand</span><span class="p">:</span>
-<a id="__codelineno-0-297" name="__codelineno-0-297"></a>        <span class="o">...</span>
-<a id="__codelineno-0-298" name="__codelineno-0-298"></a>
-<a id="__codelineno-0-299" name="__codelineno-0-299"></a>    <span class="k">def</span> <span class="nf">include</span><span class="p">(</span>
-<a id="__codelineno-0-300" name="__codelineno-0-300"></a>        <span class="bp">self</span><span class="p">,</span> <span class="n">listener_or_command</span><span class="p">:</span> <span class="n">events</span><span class="o">.</span><span class="n">EventListener</span> <span class="o">|</span> <span class="n">commands</span><span class="o">.</span><span class="n">slash_commands</span><span class="o">.</span><span class="n">SlashCommand</span> <span class="o">|</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span>
-<a id="__codelineno-0-301" name="__codelineno-0-301"></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">events</span><span class="o">.</span><span class="n">EventListener</span> <span class="o">|</span> <span class="n">commands</span><span class="o">.</span><span class="n">slash_commands</span><span class="o">.</span><span class="n">SlashCommand</span><span class="p">:</span>
-<a id="__codelineno-0-302" name="__codelineno-0-302"></a>        <span class="k">def</span> <span class="nf">inner</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<a id="__codelineno-0-303" name="__codelineno-0-303"></a>            <span class="k">nonlocal</span> <span class="n">listener_or_command</span>
-<a id="__codelineno-0-304" name="__codelineno-0-304"></a>            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">listener_or_command</span><span class="p">,</span> <span class="n">events</span><span class="o">.</span><span class="n">EventListener</span><span class="p">):</span>
-<a id="__codelineno-0-305" name="__codelineno-0-305"></a>                <span class="bp">self</span><span class="o">.</span><span class="n">event_handler</span><span class="o">.</span><span class="n">add_listener</span><span class="p">(</span><span class="n">listener_or_command</span><span class="p">)</span>
-<a id="__codelineno-0-306" name="__codelineno-0-306"></a>            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">listener_or_command</span><span class="p">,</span> <span class="n">commands</span><span class="o">.</span><span class="n">slash_commands</span><span class="o">.</span><span class="n">SlashCommand</span><span class="p">):</span>
-<a id="__codelineno-0-307" name="__codelineno-0-307"></a>                <span class="bp">self</span><span class="o">.</span><span class="n">add_slash_command</span><span class="p">(</span><span class="n">listener_or_command</span><span class="p">)</span>
-<a id="__codelineno-0-308" name="__codelineno-0-308"></a>
-<a id="__codelineno-0-309" name="__codelineno-0-309"></a>        <span class="n">inner</span><span class="p">()</span>
-<a id="__codelineno-0-310" name="__codelineno-0-310"></a>        <span class="k">return</span> <span class="n">listener_or_command</span>
-<a id="__codelineno-0-311" name="__codelineno-0-311"></a>
-<a id="__codelineno-0-312" name="__codelineno-0-312"></a>    <span class="k">def</span> <span class="nf">set_prefix</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">prefix_or_function</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">typing</span><span class="o">.</span><span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">|</span> <span class="n">builtins</span><span class="o">.</span><span class="n">function</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;CommandsClient&quot;</span><span class="p">:</span>
-<a id="__codelineno-0-313" name="__codelineno-0-313"></a>        <span class="sd">&quot;&quot;&quot;</span>
-<a id="__codelineno-0-314" name="__codelineno-0-314"></a><span class="sd">        Set a prefix to parse message commands.</span>
-<a id="__codelineno-0-315" name="__codelineno-0-315"></a><span class="sd">        Allowed prefix data</span>
-<a id="__codelineno-0-316" name="__codelineno-0-316"></a><span class="sd">        -------------------</span>
-<a id="__codelineno-0-317" name="__codelineno-0-317"></a><span class="sd">        * strings : [str][]</span>
-<a id="__codelineno-0-318" name="__codelineno-0-318"></a><span class="sd">        * iterables : [list][] / [set][] / [tuple][]</span>
-<a id="__codelineno-0-319" name="__codelineno-0-319"></a><span class="sd">        * callables : function or a coroutine.</span>
-<a id="__codelineno-0-320" name="__codelineno-0-320"></a><span class="sd">        &quot;&quot;&quot;</span>
-<a id="__codelineno-0-321" name="__codelineno-0-321"></a>        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">prefix_or_function</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
-<a id="__codelineno-0-322" name="__codelineno-0-322"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">prefix_type</span> <span class="o">=</span> <span class="nb">str</span>
-<a id="__codelineno-0-323" name="__codelineno-0-323"></a>        <span class="k">elif</span> <span class="p">(</span>
-<a id="__codelineno-0-324" name="__codelineno-0-324"></a>            <span class="nb">isinstance</span><span class="p">(</span><span class="n">prefix_or_function</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
-<a id="__codelineno-0-325" name="__codelineno-0-325"></a>            <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">prefix_or_function</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">)</span>
-<a id="__codelineno-0-326" name="__codelineno-0-326"></a>            <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">prefix_or_function</span><span class="p">,</span> <span class="nb">set</span><span class="p">)</span>
-<a id="__codelineno-0-327" name="__codelineno-0-327"></a>        <span class="p">):</span>
-<a id="__codelineno-0-328" name="__codelineno-0-328"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">prefix_type</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="n">prefix_or_function</span><span class="p">)</span>
-<a id="__codelineno-0-329" name="__codelineno-0-329"></a>        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">prefix_or_function</span><span class="p">,</span> <span class="n">builtins</span><span class="o">.</span><span class="n">function</span><span class="p">):</span>
-<a id="__codelineno-0-330" name="__codelineno-0-330"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">prefix_type</span> <span class="o">=</span> <span class="n">builtins</span><span class="o">.</span><span class="n">function</span>
-<a id="__codelineno-0-331" name="__codelineno-0-331"></a>        <span class="k">return</span> <span class="bp">self</span>
-<a id="__codelineno-0-332" name="__codelineno-0-332"></a>
-<a id="__codelineno-0-333" name="__codelineno-0-333"></a>    <span class="k">def</span> <span class="nf">with_slash_command</span><span class="p">(</span>
-<a id="__codelineno-0-334" name="__codelineno-0-334"></a>        <span class="bp">self</span><span class="p">,</span>
-<a id="__codelineno-0-335" name="__codelineno-0-335"></a>        <span class="o">*</span><span class="p">,</span>
-<a id="__codelineno-0-336" name="__codelineno-0-336"></a>        <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-0-337" name="__codelineno-0-337"></a>        <span class="n">description</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-0-338" name="__codelineno-0-338"></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">typing</span><span class="o">.</span><span class="n">Callable</span><span class="p">[[</span><span class="n">AppCommandCallbackT</span><span class="p">],</span> <span class="n">commands</span><span class="o">.</span><span class="n">slash_commands</span><span class="o">.</span><span class="n">SlashCommand</span><span class="p">]:</span>
-<a id="__codelineno-0-339" name="__codelineno-0-339"></a>        <span class="sd">&quot;&quot;&quot;Creates a slash command.</span>
-<a id="__codelineno-0-340" name="__codelineno-0-340"></a>
-<a id="__codelineno-0-341" name="__codelineno-0-341"></a><span class="sd">        Parameters</span>
-<a id="__codelineno-0-342" name="__codelineno-0-342"></a><span class="sd">        ----------</span>
-<a id="__codelineno-0-343" name="__codelineno-0-343"></a>
-<a id="__codelineno-0-344" name="__codelineno-0-344"></a><span class="sd">        name : str</span>
-<a id="__codelineno-0-345" name="__codelineno-0-345"></a><span class="sd">            Name of the command.</span>
-<a id="__codelineno-0-346" name="__codelineno-0-346"></a><span class="sd">        description : str</span>
-<a id="__codelineno-0-347" name="__codelineno-0-347"></a><span class="sd">            Description of the command.</span>
-<a id="__codelineno-0-348" name="__codelineno-0-348"></a>
-<a id="__codelineno-0-349" name="__codelineno-0-349"></a><span class="sd">        Returns</span>
-<a id="__codelineno-0-350" name="__codelineno-0-350"></a><span class="sd">        -------</span>
-<a id="__codelineno-0-351" name="__codelineno-0-351"></a>
-<a id="__codelineno-0-352" name="__codelineno-0-352"></a><span class="sd">        typing.Callable[..., commands.slash_commands.SlashCommand]</span>
-<a id="__codelineno-0-353" name="__codelineno-0-353"></a><span class="sd">            A [wyvern.commands.slash_commands.SlashCommand][] when called.</span>
-<a id="__codelineno-0-354" name="__codelineno-0-354"></a><span class="sd">        &quot;&quot;&quot;</span>
-<a id="__codelineno-0-355" name="__codelineno-0-355"></a>
-<a id="__codelineno-0-356" name="__codelineno-0-356"></a>        <span class="k">def</span> <span class="nf">inner</span><span class="p">(</span><span class="n">callback</span><span class="p">:</span> <span class="n">AppCommandCallbackT</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">commands</span><span class="o">.</span><span class="n">slash_commands</span><span class="o">.</span><span class="n">SlashCommand</span><span class="p">:</span>
-<a id="__codelineno-0-357" name="__codelineno-0-357"></a>            <span class="n">cmd</span> <span class="o">=</span> <span class="n">commands</span><span class="o">.</span><span class="n">as_slash_command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="n">description</span><span class="p">)(</span><span class="n">callback</span><span class="p">)</span>
-<a id="__codelineno-0-358" name="__codelineno-0-358"></a>
-<a id="__codelineno-0-359" name="__codelineno-0-359"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">add_slash_command</span><span class="p">(</span><span class="n">cmd</span><span class="o">.</span><span class="n">_set_client</span><span class="p">(</span><span class="bp">self</span><span class="p">))</span>
-<a id="__codelineno-0-360" name="__codelineno-0-360"></a>            <span class="k">return</span> <span class="n">cmd</span>
-<a id="__codelineno-0-361" name="__codelineno-0-361"></a>
-<a id="__codelineno-0-362" name="__codelineno-0-362"></a>        <span class="k">return</span> <span class="n">inner</span>
+<span class="normal"><a href="#__codelineno-0-362">362</a></span>
+<span class="normal"><a href="#__codelineno-0-363">363</a></span>
+<span class="normal"><a href="#__codelineno-0-364">364</a></span>
+<span class="normal"><a href="#__codelineno-0-365">365</a></span>
+<span class="normal"><a href="#__codelineno-0-366">366</a></span>
+<span class="normal"><a href="#__codelineno-0-367">367</a></span>
+<span class="normal"><a href="#__codelineno-0-368">368</a></span>
+<span class="normal"><a href="#__codelineno-0-369">369</a></span>
+<span class="normal"><a href="#__codelineno-0-370">370</a></span>
+<span class="normal"><a href="#__codelineno-0-371">371</a></span>
+<span class="normal"><a href="#__codelineno-0-372">372</a></span>
+<span class="normal"><a href="#__codelineno-0-373">373</a></span>
+<span class="normal"><a href="#__codelineno-0-374">374</a></span>
+<span class="normal"><a href="#__codelineno-0-375">375</a></span>
+<span class="normal"><a href="#__codelineno-0-376">376</a></span>
+<span class="normal"><a href="#__codelineno-0-377">377</a></span>
+<span class="normal"><a href="#__codelineno-0-378">378</a></span>
+<span class="normal"><a href="#__codelineno-0-379">379</a></span>
+<span class="normal"><a href="#__codelineno-0-380">380</a></span>
+<span class="normal"><a href="#__codelineno-0-381">381</a></span>
+<span class="normal"><a href="#__codelineno-0-382">382</a></span>
+<span class="normal"><a href="#__codelineno-0-383">383</a></span>
+<span class="normal"><a href="#__codelineno-0-384">384</a></span>
+<span class="normal"><a href="#__codelineno-0-385">385</a></span>
+<span class="normal"><a href="#__codelineno-0-386">386</a></span>
+<span class="normal"><a href="#__codelineno-0-387">387</a></span>
+<span class="normal"><a href="#__codelineno-0-388">388</a></span>
+<span class="normal"><a href="#__codelineno-0-389">389</a></span>
+<span class="normal"><a href="#__codelineno-0-390">390</a></span>
+<span class="normal"><a href="#__codelineno-0-391">391</a></span>
+<span class="normal"><a href="#__codelineno-0-392">392</a></span>
+<span class="normal"><a href="#__codelineno-0-393">393</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-297" name="__codelineno-0-297"></a><span class="k">class</span> <span class="nc">CommandsClient</span><span class="p">(</span><span class="n">GatewayClient</span><span class="p">,</span> <span class="n">commands</span><span class="o">.</span><span class="n">CommandHandler</span><span class="p">):</span>
+<a id="__codelineno-0-298" name="__codelineno-0-298"></a>    <span class="sd">&quot;&quot;&quot;Implementation of the [wyvern.GatewayClient][] class with a command handler.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-299" name="__codelineno-0-299"></a>
+<a id="__codelineno-0-300" name="__codelineno-0-300"></a>    <span class="n">slash_commands</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="s2">&quot;commands.slash_commands.SlashCommand&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+<a id="__codelineno-0-301" name="__codelineno-0-301"></a>    <span class="sd">&quot;&quot;&quot;List of slash commands attached to the client in code.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-302" name="__codelineno-0-302"></a>    <span class="n">slash_groups</span><span class="p">:</span> <span class="nb">dict</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="s2">&quot;commands.slash_commands.SlashGroup&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+<a id="__codelineno-0-303" name="__codelineno-0-303"></a>    <span class="sd">&quot;&quot;&quot;List of slash command groups attached to the client in code.&quot;&quot;&quot;</span>
+<a id="__codelineno-0-304" name="__codelineno-0-304"></a>
+<a id="__codelineno-0-305" name="__codelineno-0-305"></a>    <span class="nd">@events</span><span class="o">.</span><span class="n">as_listener</span><span class="p">(</span><span class="n">events</span><span class="o">.</span><span class="n">Event</span><span class="o">.</span><span class="n">INTERACTION_CREATE</span><span class="p">)</span>
+<a id="__codelineno-0-306" name="__codelineno-0-306"></a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">_handle_inters</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inter</span><span class="p">:</span> <span class="n">interactions</span><span class="o">.</span><span class="n">Interaction</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<a id="__codelineno-0-307" name="__codelineno-0-307"></a>        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">inter</span><span class="p">,</span> <span class="n">interactions</span><span class="o">.</span><span class="n">ApplicationCommandInteraction</span><span class="p">):</span>
+<a id="__codelineno-0-308" name="__codelineno-0-308"></a>            <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">process_application_commands</span><span class="p">(</span><span class="n">inter</span><span class="p">)</span>
+<a id="__codelineno-0-309" name="__codelineno-0-309"></a>
+<a id="__codelineno-0-310" name="__codelineno-0-310"></a>    <span class="k">def</span> <span class="nf">add_slash_command</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">command</span><span class="p">:</span> <span class="n">commands</span><span class="o">.</span><span class="n">slash_commands</span><span class="o">.</span><span class="n">SlashCommand</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<a id="__codelineno-0-311" name="__codelineno-0-311"></a>        <span class="k">if</span> <span class="p">(</span><span class="n">name</span> <span class="o">:=</span> <span class="n">command</span><span class="o">.</span><span class="n">name</span><span class="p">)</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">slash_commands</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+<a id="__codelineno-0-312" name="__codelineno-0-312"></a>            <span class="k">raise</span> <span class="n">exceptions</span><span class="o">.</span><span class="n">CommandAlreadyExists</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;A slash command named </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> already exists.&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-313" name="__codelineno-0-313"></a>        <span class="n">_LOGGER</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Adding slash command </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> to bot.&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-314" name="__codelineno-0-314"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">slash_commands</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">command</span>
+<a id="__codelineno-0-315" name="__codelineno-0-315"></a>
+<a id="__codelineno-0-316" name="__codelineno-0-316"></a>    <span class="k">def</span> <span class="nf">add_slash_group</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">group</span><span class="p">:</span> <span class="n">commands</span><span class="o">.</span><span class="n">slash_commands</span><span class="o">.</span><span class="n">SlashGroup</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<a id="__codelineno-0-317" name="__codelineno-0-317"></a>        <span class="k">if</span> <span class="p">(</span><span class="n">name</span> <span class="o">:=</span> <span class="n">group</span><span class="o">.</span><span class="n">name</span><span class="p">)</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">slash_groups</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+<a id="__codelineno-0-318" name="__codelineno-0-318"></a>            <span class="k">raise</span> <span class="n">exceptions</span><span class="o">.</span><span class="n">CommandAlreadyExists</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;A slash command named </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> already exists.&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-319" name="__codelineno-0-319"></a>        <span class="n">_LOGGER</span><span class="o">.</span><span class="n">debug</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Adding slash group </span><span class="si">{</span><span class="n">name</span><span class="si">}</span><span class="s2"> to bot.&quot;</span><span class="p">)</span>
+<a id="__codelineno-0-320" name="__codelineno-0-320"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">slash_groups</span><span class="p">[</span><span class="n">name</span><span class="p">]</span> <span class="o">=</span> <span class="n">group</span>
+<a id="__codelineno-0-321" name="__codelineno-0-321"></a>
+<a id="__codelineno-0-322" name="__codelineno-0-322"></a>    <span class="nd">@typing</span><span class="o">.</span><span class="n">overload</span>
+<a id="__codelineno-0-323" name="__codelineno-0-323"></a>    <span class="k">def</span> <span class="nf">add_item</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">listener_or_command</span><span class="p">:</span> <span class="n">events</span><span class="o">.</span><span class="n">EventListener</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">events</span><span class="o">.</span><span class="n">EventListener</span><span class="p">:</span>
+<a id="__codelineno-0-324" name="__codelineno-0-324"></a>        <span class="o">...</span>
+<a id="__codelineno-0-325" name="__codelineno-0-325"></a>
+<a id="__codelineno-0-326" name="__codelineno-0-326"></a>    <span class="nd">@typing</span><span class="o">.</span><span class="n">overload</span>
+<a id="__codelineno-0-327" name="__codelineno-0-327"></a>    <span class="k">def</span> <span class="nf">add_item</span><span class="p">(</span>
+<a id="__codelineno-0-328" name="__codelineno-0-328"></a>        <span class="bp">self</span><span class="p">,</span> <span class="n">listener_or_command</span><span class="p">:</span> <span class="n">commands</span><span class="o">.</span><span class="n">slash_commands</span><span class="o">.</span><span class="n">SlashCommand</span>
+<a id="__codelineno-0-329" name="__codelineno-0-329"></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">commands</span><span class="o">.</span><span class="n">slash_commands</span><span class="o">.</span><span class="n">SlashCommand</span><span class="p">:</span>
+<a id="__codelineno-0-330" name="__codelineno-0-330"></a>        <span class="o">...</span>
+<a id="__codelineno-0-331" name="__codelineno-0-331"></a>
+<a id="__codelineno-0-332" name="__codelineno-0-332"></a>    <span class="k">def</span> <span class="nf">add_item</span><span class="p">(</span>
+<a id="__codelineno-0-333" name="__codelineno-0-333"></a>        <span class="bp">self</span><span class="p">,</span> <span class="n">listener_or_command</span><span class="p">:</span> <span class="n">events</span><span class="o">.</span><span class="n">EventListener</span> <span class="o">|</span> <span class="n">commands</span><span class="o">.</span><span class="n">slash_commands</span><span class="o">.</span><span class="n">SlashCommand</span> <span class="o">|</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span>
+<a id="__codelineno-0-334" name="__codelineno-0-334"></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">events</span><span class="o">.</span><span class="n">EventListener</span> <span class="o">|</span> <span class="n">commands</span><span class="o">.</span><span class="n">slash_commands</span><span class="o">.</span><span class="n">SlashCommand</span><span class="p">:</span>
+<a id="__codelineno-0-335" name="__codelineno-0-335"></a>        <span class="k">def</span> <span class="nf">inner</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<a id="__codelineno-0-336" name="__codelineno-0-336"></a>            <span class="k">nonlocal</span> <span class="n">listener_or_command</span>
+<a id="__codelineno-0-337" name="__codelineno-0-337"></a>            <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">listener_or_command</span><span class="p">,</span> <span class="n">events</span><span class="o">.</span><span class="n">EventListener</span><span class="p">):</span>
+<a id="__codelineno-0-338" name="__codelineno-0-338"></a>                <span class="bp">self</span><span class="o">.</span><span class="n">event_handler</span><span class="o">.</span><span class="n">add_listener</span><span class="p">(</span><span class="n">listener_or_command</span><span class="p">)</span>
+<a id="__codelineno-0-339" name="__codelineno-0-339"></a>            <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">listener_or_command</span><span class="p">,</span> <span class="n">commands</span><span class="o">.</span><span class="n">slash_commands</span><span class="o">.</span><span class="n">SlashCommand</span><span class="p">):</span>
+<a id="__codelineno-0-340" name="__codelineno-0-340"></a>                <span class="bp">self</span><span class="o">.</span><span class="n">add_slash_command</span><span class="p">(</span><span class="n">listener_or_command</span><span class="p">)</span>
+<a id="__codelineno-0-341" name="__codelineno-0-341"></a>
+<a id="__codelineno-0-342" name="__codelineno-0-342"></a>        <span class="n">inner</span><span class="p">()</span>
+<a id="__codelineno-0-343" name="__codelineno-0-343"></a>        <span class="k">return</span> <span class="n">listener_or_command</span>
+<a id="__codelineno-0-344" name="__codelineno-0-344"></a>
+<a id="__codelineno-0-345" name="__codelineno-0-345"></a>    <span class="k">def</span> <span class="nf">set_prefix</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">prefix_or_function</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">typing</span><span class="o">.</span><span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">|</span> <span class="n">builtins</span><span class="o">.</span><span class="n">function</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;CommandsClient&quot;</span><span class="p">:</span>
+<a id="__codelineno-0-346" name="__codelineno-0-346"></a>        <span class="sd">&quot;&quot;&quot;</span>
+<a id="__codelineno-0-347" name="__codelineno-0-347"></a><span class="sd">        Set a prefix to parse message commands.</span>
+<a id="__codelineno-0-348" name="__codelineno-0-348"></a><span class="sd">        Allowed prefix data</span>
+<a id="__codelineno-0-349" name="__codelineno-0-349"></a><span class="sd">        -------------------</span>
+<a id="__codelineno-0-350" name="__codelineno-0-350"></a><span class="sd">        * strings : [str][]</span>
+<a id="__codelineno-0-351" name="__codelineno-0-351"></a><span class="sd">        * iterables : [list][] / [set][] / [tuple][]</span>
+<a id="__codelineno-0-352" name="__codelineno-0-352"></a><span class="sd">        * callables : [builtins.function][] or a [asyncio.coroutine][].</span>
+<a id="__codelineno-0-353" name="__codelineno-0-353"></a><span class="sd">        &quot;&quot;&quot;</span>
+<a id="__codelineno-0-354" name="__codelineno-0-354"></a>        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">prefix_or_function</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+<a id="__codelineno-0-355" name="__codelineno-0-355"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">prefix_type</span> <span class="o">=</span> <span class="nb">str</span>
+<a id="__codelineno-0-356" name="__codelineno-0-356"></a>        <span class="k">elif</span> <span class="p">(</span>
+<a id="__codelineno-0-357" name="__codelineno-0-357"></a>            <span class="nb">isinstance</span><span class="p">(</span><span class="n">prefix_or_function</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+<a id="__codelineno-0-358" name="__codelineno-0-358"></a>            <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">prefix_or_function</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">)</span>
+<a id="__codelineno-0-359" name="__codelineno-0-359"></a>            <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">prefix_or_function</span><span class="p">,</span> <span class="nb">set</span><span class="p">)</span>
+<a id="__codelineno-0-360" name="__codelineno-0-360"></a>        <span class="p">):</span>
+<a id="__codelineno-0-361" name="__codelineno-0-361"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">prefix_type</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="n">prefix_or_function</span><span class="p">)</span>
+<a id="__codelineno-0-362" name="__codelineno-0-362"></a>        <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">prefix_or_function</span><span class="p">,</span> <span class="n">builtins</span><span class="o">.</span><span class="n">function</span><span class="p">):</span>
+<a id="__codelineno-0-363" name="__codelineno-0-363"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">prefix_type</span> <span class="o">=</span> <span class="n">builtins</span><span class="o">.</span><span class="n">function</span>
+<a id="__codelineno-0-364" name="__codelineno-0-364"></a>        <span class="k">return</span> <span class="bp">self</span>
+<a id="__codelineno-0-365" name="__codelineno-0-365"></a>
+<a id="__codelineno-0-366" name="__codelineno-0-366"></a>    <span class="k">def</span> <span class="nf">with_slash_command</span><span class="p">(</span>
+<a id="__codelineno-0-367" name="__codelineno-0-367"></a>        <span class="bp">self</span><span class="p">,</span>
+<a id="__codelineno-0-368" name="__codelineno-0-368"></a>        <span class="o">*</span><span class="p">,</span>
+<a id="__codelineno-0-369" name="__codelineno-0-369"></a>        <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-0-370" name="__codelineno-0-370"></a>        <span class="n">description</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-0-371" name="__codelineno-0-371"></a>    <span class="p">)</span> <span class="o">-&gt;</span> <span class="n">typing</span><span class="o">.</span><span class="n">Callable</span><span class="p">[[</span><span class="n">AppCommandCallbackT</span><span class="p">],</span> <span class="n">commands</span><span class="o">.</span><span class="n">slash_commands</span><span class="o">.</span><span class="n">SlashCommand</span><span class="p">]:</span>
+<a id="__codelineno-0-372" name="__codelineno-0-372"></a>        <span class="sd">&quot;&quot;&quot;Creates a slash command.</span>
+<a id="__codelineno-0-373" name="__codelineno-0-373"></a>
+<a id="__codelineno-0-374" name="__codelineno-0-374"></a><span class="sd">        Parameters</span>
+<a id="__codelineno-0-375" name="__codelineno-0-375"></a><span class="sd">        ----------</span>
+<a id="__codelineno-0-376" name="__codelineno-0-376"></a><span class="sd">        name : str</span>
+<a id="__codelineno-0-377" name="__codelineno-0-377"></a><span class="sd">            Name of the command.</span>
+<a id="__codelineno-0-378" name="__codelineno-0-378"></a><span class="sd">        description : str</span>
+<a id="__codelineno-0-379" name="__codelineno-0-379"></a><span class="sd">            Description of the command.</span>
+<a id="__codelineno-0-380" name="__codelineno-0-380"></a>
+<a id="__codelineno-0-381" name="__codelineno-0-381"></a><span class="sd">        Returns</span>
+<a id="__codelineno-0-382" name="__codelineno-0-382"></a><span class="sd">        -------</span>
+<a id="__codelineno-0-383" name="__codelineno-0-383"></a><span class="sd">        typing.Callable[..., commands.slash_commands.SlashCommand]</span>
+<a id="__codelineno-0-384" name="__codelineno-0-384"></a><span class="sd">            A [wyvern.commands.slash_commands.SlashCommand][] when called.</span>
+<a id="__codelineno-0-385" name="__codelineno-0-385"></a><span class="sd">        &quot;&quot;&quot;</span>
+<a id="__codelineno-0-386" name="__codelineno-0-386"></a>
+<a id="__codelineno-0-387" name="__codelineno-0-387"></a>        <span class="k">def</span> <span class="nf">inner</span><span class="p">(</span><span class="n">callback</span><span class="p">:</span> <span class="n">AppCommandCallbackT</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">commands</span><span class="o">.</span><span class="n">slash_commands</span><span class="o">.</span><span class="n">SlashCommand</span><span class="p">:</span>
+<a id="__codelineno-0-388" name="__codelineno-0-388"></a>            <span class="n">cmd</span> <span class="o">=</span> <span class="n">commands</span><span class="o">.</span><span class="n">as_slash_command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="n">description</span><span class="p">)(</span><span class="n">callback</span><span class="p">)</span>
+<a id="__codelineno-0-389" name="__codelineno-0-389"></a>
+<a id="__codelineno-0-390" name="__codelineno-0-390"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">add_slash_command</span><span class="p">(</span><span class="n">cmd</span><span class="o">.</span><span class="n">_set_client</span><span class="p">(</span><span class="bp">self</span><span class="p">))</span>
+<a id="__codelineno-0-391" name="__codelineno-0-391"></a>            <span class="k">return</span> <span class="n">cmd</span>
+<a id="__codelineno-0-392" name="__codelineno-0-392"></a>
+<a id="__codelineno-0-393" name="__codelineno-0-393"></a>        <span class="k">return</span> <span class="n">inner</span>
 </code></pre></div></td></tr></table></div>
         </details>
 
@@ -1476,50 +1484,50 @@ Allowed prefix data</p>
 <ul>
 <li>strings : <a class="autorefs autorefs-external" href="https://docs.python.org/3.9/library/stdtypes.html#str">str</a></li>
 <li>iterables : <a class="autorefs autorefs-external" href="https://docs.python.org/3.9/library/stdtypes.html#list">list</a> / <a class="autorefs autorefs-external" href="https://docs.python.org/3.9/library/stdtypes.html#set">set</a> / <a class="autorefs autorefs-external" href="https://docs.python.org/3.9/library/stdtypes.html#tuple">tuple</a></li>
-<li>callables : function or a coroutine.</li>
+<li>callables : [builtins.function][] or a <a class="autorefs autorefs-external" href="https://docs.python.org/3.9/library/asyncio-task.html#asyncio.coroutine">asyncio.coroutine</a>.</li>
 </ul>
 
       <details class="quote">
         <summary>Source code in <code>wyvern/clients.py</code></summary>
-        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-312">312</a></span>
-<span class="normal"><a href="#__codelineno-0-313">313</a></span>
-<span class="normal"><a href="#__codelineno-0-314">314</a></span>
-<span class="normal"><a href="#__codelineno-0-315">315</a></span>
-<span class="normal"><a href="#__codelineno-0-316">316</a></span>
-<span class="normal"><a href="#__codelineno-0-317">317</a></span>
-<span class="normal"><a href="#__codelineno-0-318">318</a></span>
-<span class="normal"><a href="#__codelineno-0-319">319</a></span>
-<span class="normal"><a href="#__codelineno-0-320">320</a></span>
-<span class="normal"><a href="#__codelineno-0-321">321</a></span>
-<span class="normal"><a href="#__codelineno-0-322">322</a></span>
-<span class="normal"><a href="#__codelineno-0-323">323</a></span>
-<span class="normal"><a href="#__codelineno-0-324">324</a></span>
-<span class="normal"><a href="#__codelineno-0-325">325</a></span>
-<span class="normal"><a href="#__codelineno-0-326">326</a></span>
-<span class="normal"><a href="#__codelineno-0-327">327</a></span>
-<span class="normal"><a href="#__codelineno-0-328">328</a></span>
-<span class="normal"><a href="#__codelineno-0-329">329</a></span>
-<span class="normal"><a href="#__codelineno-0-330">330</a></span>
-<span class="normal"><a href="#__codelineno-0-331">331</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-312" name="__codelineno-0-312"></a><span class="k">def</span> <span class="nf">set_prefix</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">prefix_or_function</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">typing</span><span class="o">.</span><span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">|</span> <span class="n">builtins</span><span class="o">.</span><span class="n">function</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;CommandsClient&quot;</span><span class="p">:</span>
-<a id="__codelineno-0-313" name="__codelineno-0-313"></a>    <span class="sd">&quot;&quot;&quot;</span>
-<a id="__codelineno-0-314" name="__codelineno-0-314"></a><span class="sd">    Set a prefix to parse message commands.</span>
-<a id="__codelineno-0-315" name="__codelineno-0-315"></a><span class="sd">    Allowed prefix data</span>
-<a id="__codelineno-0-316" name="__codelineno-0-316"></a><span class="sd">    -------------------</span>
-<a id="__codelineno-0-317" name="__codelineno-0-317"></a><span class="sd">    * strings : [str][]</span>
-<a id="__codelineno-0-318" name="__codelineno-0-318"></a><span class="sd">    * iterables : [list][] / [set][] / [tuple][]</span>
-<a id="__codelineno-0-319" name="__codelineno-0-319"></a><span class="sd">    * callables : function or a coroutine.</span>
-<a id="__codelineno-0-320" name="__codelineno-0-320"></a><span class="sd">    &quot;&quot;&quot;</span>
-<a id="__codelineno-0-321" name="__codelineno-0-321"></a>    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">prefix_or_function</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
-<a id="__codelineno-0-322" name="__codelineno-0-322"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">prefix_type</span> <span class="o">=</span> <span class="nb">str</span>
-<a id="__codelineno-0-323" name="__codelineno-0-323"></a>    <span class="k">elif</span> <span class="p">(</span>
-<a id="__codelineno-0-324" name="__codelineno-0-324"></a>        <span class="nb">isinstance</span><span class="p">(</span><span class="n">prefix_or_function</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
-<a id="__codelineno-0-325" name="__codelineno-0-325"></a>        <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">prefix_or_function</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">)</span>
-<a id="__codelineno-0-326" name="__codelineno-0-326"></a>        <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">prefix_or_function</span><span class="p">,</span> <span class="nb">set</span><span class="p">)</span>
-<a id="__codelineno-0-327" name="__codelineno-0-327"></a>    <span class="p">):</span>
-<a id="__codelineno-0-328" name="__codelineno-0-328"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">prefix_type</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="n">prefix_or_function</span><span class="p">)</span>
-<a id="__codelineno-0-329" name="__codelineno-0-329"></a>    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">prefix_or_function</span><span class="p">,</span> <span class="n">builtins</span><span class="o">.</span><span class="n">function</span><span class="p">):</span>
-<a id="__codelineno-0-330" name="__codelineno-0-330"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">prefix_type</span> <span class="o">=</span> <span class="n">builtins</span><span class="o">.</span><span class="n">function</span>
-<a id="__codelineno-0-331" name="__codelineno-0-331"></a>    <span class="k">return</span> <span class="bp">self</span>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-345">345</a></span>
+<span class="normal"><a href="#__codelineno-0-346">346</a></span>
+<span class="normal"><a href="#__codelineno-0-347">347</a></span>
+<span class="normal"><a href="#__codelineno-0-348">348</a></span>
+<span class="normal"><a href="#__codelineno-0-349">349</a></span>
+<span class="normal"><a href="#__codelineno-0-350">350</a></span>
+<span class="normal"><a href="#__codelineno-0-351">351</a></span>
+<span class="normal"><a href="#__codelineno-0-352">352</a></span>
+<span class="normal"><a href="#__codelineno-0-353">353</a></span>
+<span class="normal"><a href="#__codelineno-0-354">354</a></span>
+<span class="normal"><a href="#__codelineno-0-355">355</a></span>
+<span class="normal"><a href="#__codelineno-0-356">356</a></span>
+<span class="normal"><a href="#__codelineno-0-357">357</a></span>
+<span class="normal"><a href="#__codelineno-0-358">358</a></span>
+<span class="normal"><a href="#__codelineno-0-359">359</a></span>
+<span class="normal"><a href="#__codelineno-0-360">360</a></span>
+<span class="normal"><a href="#__codelineno-0-361">361</a></span>
+<span class="normal"><a href="#__codelineno-0-362">362</a></span>
+<span class="normal"><a href="#__codelineno-0-363">363</a></span>
+<span class="normal"><a href="#__codelineno-0-364">364</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-345" name="__codelineno-0-345"></a><span class="k">def</span> <span class="nf">set_prefix</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">prefix_or_function</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="n">typing</span><span class="o">.</span><span class="n">Sequence</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">|</span> <span class="n">builtins</span><span class="o">.</span><span class="n">function</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="s2">&quot;CommandsClient&quot;</span><span class="p">:</span>
+<a id="__codelineno-0-346" name="__codelineno-0-346"></a>    <span class="sd">&quot;&quot;&quot;</span>
+<a id="__codelineno-0-347" name="__codelineno-0-347"></a><span class="sd">    Set a prefix to parse message commands.</span>
+<a id="__codelineno-0-348" name="__codelineno-0-348"></a><span class="sd">    Allowed prefix data</span>
+<a id="__codelineno-0-349" name="__codelineno-0-349"></a><span class="sd">    -------------------</span>
+<a id="__codelineno-0-350" name="__codelineno-0-350"></a><span class="sd">    * strings : [str][]</span>
+<a id="__codelineno-0-351" name="__codelineno-0-351"></a><span class="sd">    * iterables : [list][] / [set][] / [tuple][]</span>
+<a id="__codelineno-0-352" name="__codelineno-0-352"></a><span class="sd">    * callables : [builtins.function][] or a [asyncio.coroutine][].</span>
+<a id="__codelineno-0-353" name="__codelineno-0-353"></a><span class="sd">    &quot;&quot;&quot;</span>
+<a id="__codelineno-0-354" name="__codelineno-0-354"></a>    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">prefix_or_function</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+<a id="__codelineno-0-355" name="__codelineno-0-355"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">prefix_type</span> <span class="o">=</span> <span class="nb">str</span>
+<a id="__codelineno-0-356" name="__codelineno-0-356"></a>    <span class="k">elif</span> <span class="p">(</span>
+<a id="__codelineno-0-357" name="__codelineno-0-357"></a>        <span class="nb">isinstance</span><span class="p">(</span><span class="n">prefix_or_function</span><span class="p">,</span> <span class="nb">list</span><span class="p">)</span>
+<a id="__codelineno-0-358" name="__codelineno-0-358"></a>        <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">prefix_or_function</span><span class="p">,</span> <span class="nb">tuple</span><span class="p">)</span>
+<a id="__codelineno-0-359" name="__codelineno-0-359"></a>        <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">prefix_or_function</span><span class="p">,</span> <span class="nb">set</span><span class="p">)</span>
+<a id="__codelineno-0-360" name="__codelineno-0-360"></a>    <span class="p">):</span>
+<a id="__codelineno-0-361" name="__codelineno-0-361"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">prefix_type</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="n">prefix_or_function</span><span class="p">)</span>
+<a id="__codelineno-0-362" name="__codelineno-0-362"></a>    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">prefix_or_function</span><span class="p">,</span> <span class="n">builtins</span><span class="o">.</span><span class="n">function</span><span class="p">):</span>
+<a id="__codelineno-0-363" name="__codelineno-0-363"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">prefix_type</span> <span class="o">=</span> <span class="n">builtins</span><span class="o">.</span><span class="n">function</span>
+<a id="__codelineno-0-364" name="__codelineno-0-364"></a>    <span class="k">return</span> <span class="bp">self</span>
 </code></pre></div></td></tr></table></div>
       </details>
   </div>
@@ -1594,65 +1602,61 @@ Allowed prefix data</p>
 
       <details class="quote">
         <summary>Source code in <code>wyvern/clients.py</code></summary>
-        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-333">333</a></span>
-<span class="normal"><a href="#__codelineno-0-334">334</a></span>
-<span class="normal"><a href="#__codelineno-0-335">335</a></span>
-<span class="normal"><a href="#__codelineno-0-336">336</a></span>
-<span class="normal"><a href="#__codelineno-0-337">337</a></span>
-<span class="normal"><a href="#__codelineno-0-338">338</a></span>
-<span class="normal"><a href="#__codelineno-0-339">339</a></span>
-<span class="normal"><a href="#__codelineno-0-340">340</a></span>
-<span class="normal"><a href="#__codelineno-0-341">341</a></span>
-<span class="normal"><a href="#__codelineno-0-342">342</a></span>
-<span class="normal"><a href="#__codelineno-0-343">343</a></span>
-<span class="normal"><a href="#__codelineno-0-344">344</a></span>
-<span class="normal"><a href="#__codelineno-0-345">345</a></span>
-<span class="normal"><a href="#__codelineno-0-346">346</a></span>
-<span class="normal"><a href="#__codelineno-0-347">347</a></span>
-<span class="normal"><a href="#__codelineno-0-348">348</a></span>
-<span class="normal"><a href="#__codelineno-0-349">349</a></span>
-<span class="normal"><a href="#__codelineno-0-350">350</a></span>
-<span class="normal"><a href="#__codelineno-0-351">351</a></span>
-<span class="normal"><a href="#__codelineno-0-352">352</a></span>
-<span class="normal"><a href="#__codelineno-0-353">353</a></span>
-<span class="normal"><a href="#__codelineno-0-354">354</a></span>
-<span class="normal"><a href="#__codelineno-0-355">355</a></span>
-<span class="normal"><a href="#__codelineno-0-356">356</a></span>
-<span class="normal"><a href="#__codelineno-0-357">357</a></span>
-<span class="normal"><a href="#__codelineno-0-358">358</a></span>
-<span class="normal"><a href="#__codelineno-0-359">359</a></span>
-<span class="normal"><a href="#__codelineno-0-360">360</a></span>
-<span class="normal"><a href="#__codelineno-0-361">361</a></span>
-<span class="normal"><a href="#__codelineno-0-362">362</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-333" name="__codelineno-0-333"></a><span class="k">def</span> <span class="nf">with_slash_command</span><span class="p">(</span>
-<a id="__codelineno-0-334" name="__codelineno-0-334"></a>    <span class="bp">self</span><span class="p">,</span>
-<a id="__codelineno-0-335" name="__codelineno-0-335"></a>    <span class="o">*</span><span class="p">,</span>
-<a id="__codelineno-0-336" name="__codelineno-0-336"></a>    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-0-337" name="__codelineno-0-337"></a>    <span class="n">description</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
-<a id="__codelineno-0-338" name="__codelineno-0-338"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">typing</span><span class="o">.</span><span class="n">Callable</span><span class="p">[[</span><span class="n">AppCommandCallbackT</span><span class="p">],</span> <span class="n">commands</span><span class="o">.</span><span class="n">slash_commands</span><span class="o">.</span><span class="n">SlashCommand</span><span class="p">]:</span>
-<a id="__codelineno-0-339" name="__codelineno-0-339"></a>    <span class="sd">&quot;&quot;&quot;Creates a slash command.</span>
-<a id="__codelineno-0-340" name="__codelineno-0-340"></a>
-<a id="__codelineno-0-341" name="__codelineno-0-341"></a><span class="sd">    Parameters</span>
-<a id="__codelineno-0-342" name="__codelineno-0-342"></a><span class="sd">    ----------</span>
-<a id="__codelineno-0-343" name="__codelineno-0-343"></a>
-<a id="__codelineno-0-344" name="__codelineno-0-344"></a><span class="sd">    name : str</span>
-<a id="__codelineno-0-345" name="__codelineno-0-345"></a><span class="sd">        Name of the command.</span>
-<a id="__codelineno-0-346" name="__codelineno-0-346"></a><span class="sd">    description : str</span>
-<a id="__codelineno-0-347" name="__codelineno-0-347"></a><span class="sd">        Description of the command.</span>
-<a id="__codelineno-0-348" name="__codelineno-0-348"></a>
-<a id="__codelineno-0-349" name="__codelineno-0-349"></a><span class="sd">    Returns</span>
-<a id="__codelineno-0-350" name="__codelineno-0-350"></a><span class="sd">    -------</span>
-<a id="__codelineno-0-351" name="__codelineno-0-351"></a>
-<a id="__codelineno-0-352" name="__codelineno-0-352"></a><span class="sd">    typing.Callable[..., commands.slash_commands.SlashCommand]</span>
-<a id="__codelineno-0-353" name="__codelineno-0-353"></a><span class="sd">        A [wyvern.commands.slash_commands.SlashCommand][] when called.</span>
-<a id="__codelineno-0-354" name="__codelineno-0-354"></a><span class="sd">    &quot;&quot;&quot;</span>
-<a id="__codelineno-0-355" name="__codelineno-0-355"></a>
-<a id="__codelineno-0-356" name="__codelineno-0-356"></a>    <span class="k">def</span> <span class="nf">inner</span><span class="p">(</span><span class="n">callback</span><span class="p">:</span> <span class="n">AppCommandCallbackT</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">commands</span><span class="o">.</span><span class="n">slash_commands</span><span class="o">.</span><span class="n">SlashCommand</span><span class="p">:</span>
-<a id="__codelineno-0-357" name="__codelineno-0-357"></a>        <span class="n">cmd</span> <span class="o">=</span> <span class="n">commands</span><span class="o">.</span><span class="n">as_slash_command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="n">description</span><span class="p">)(</span><span class="n">callback</span><span class="p">)</span>
-<a id="__codelineno-0-358" name="__codelineno-0-358"></a>
-<a id="__codelineno-0-359" name="__codelineno-0-359"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">add_slash_command</span><span class="p">(</span><span class="n">cmd</span><span class="o">.</span><span class="n">_set_client</span><span class="p">(</span><span class="bp">self</span><span class="p">))</span>
-<a id="__codelineno-0-360" name="__codelineno-0-360"></a>        <span class="k">return</span> <span class="n">cmd</span>
-<a id="__codelineno-0-361" name="__codelineno-0-361"></a>
-<a id="__codelineno-0-362" name="__codelineno-0-362"></a>    <span class="k">return</span> <span class="n">inner</span>
+        <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-366">366</a></span>
+<span class="normal"><a href="#__codelineno-0-367">367</a></span>
+<span class="normal"><a href="#__codelineno-0-368">368</a></span>
+<span class="normal"><a href="#__codelineno-0-369">369</a></span>
+<span class="normal"><a href="#__codelineno-0-370">370</a></span>
+<span class="normal"><a href="#__codelineno-0-371">371</a></span>
+<span class="normal"><a href="#__codelineno-0-372">372</a></span>
+<span class="normal"><a href="#__codelineno-0-373">373</a></span>
+<span class="normal"><a href="#__codelineno-0-374">374</a></span>
+<span class="normal"><a href="#__codelineno-0-375">375</a></span>
+<span class="normal"><a href="#__codelineno-0-376">376</a></span>
+<span class="normal"><a href="#__codelineno-0-377">377</a></span>
+<span class="normal"><a href="#__codelineno-0-378">378</a></span>
+<span class="normal"><a href="#__codelineno-0-379">379</a></span>
+<span class="normal"><a href="#__codelineno-0-380">380</a></span>
+<span class="normal"><a href="#__codelineno-0-381">381</a></span>
+<span class="normal"><a href="#__codelineno-0-382">382</a></span>
+<span class="normal"><a href="#__codelineno-0-383">383</a></span>
+<span class="normal"><a href="#__codelineno-0-384">384</a></span>
+<span class="normal"><a href="#__codelineno-0-385">385</a></span>
+<span class="normal"><a href="#__codelineno-0-386">386</a></span>
+<span class="normal"><a href="#__codelineno-0-387">387</a></span>
+<span class="normal"><a href="#__codelineno-0-388">388</a></span>
+<span class="normal"><a href="#__codelineno-0-389">389</a></span>
+<span class="normal"><a href="#__codelineno-0-390">390</a></span>
+<span class="normal"><a href="#__codelineno-0-391">391</a></span>
+<span class="normal"><a href="#__codelineno-0-392">392</a></span>
+<span class="normal"><a href="#__codelineno-0-393">393</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-366" name="__codelineno-0-366"></a><span class="k">def</span> <span class="nf">with_slash_command</span><span class="p">(</span>
+<a id="__codelineno-0-367" name="__codelineno-0-367"></a>    <span class="bp">self</span><span class="p">,</span>
+<a id="__codelineno-0-368" name="__codelineno-0-368"></a>    <span class="o">*</span><span class="p">,</span>
+<a id="__codelineno-0-369" name="__codelineno-0-369"></a>    <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-0-370" name="__codelineno-0-370"></a>    <span class="n">description</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+<a id="__codelineno-0-371" name="__codelineno-0-371"></a><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">typing</span><span class="o">.</span><span class="n">Callable</span><span class="p">[[</span><span class="n">AppCommandCallbackT</span><span class="p">],</span> <span class="n">commands</span><span class="o">.</span><span class="n">slash_commands</span><span class="o">.</span><span class="n">SlashCommand</span><span class="p">]:</span>
+<a id="__codelineno-0-372" name="__codelineno-0-372"></a>    <span class="sd">&quot;&quot;&quot;Creates a slash command.</span>
+<a id="__codelineno-0-373" name="__codelineno-0-373"></a>
+<a id="__codelineno-0-374" name="__codelineno-0-374"></a><span class="sd">    Parameters</span>
+<a id="__codelineno-0-375" name="__codelineno-0-375"></a><span class="sd">    ----------</span>
+<a id="__codelineno-0-376" name="__codelineno-0-376"></a><span class="sd">    name : str</span>
+<a id="__codelineno-0-377" name="__codelineno-0-377"></a><span class="sd">        Name of the command.</span>
+<a id="__codelineno-0-378" name="__codelineno-0-378"></a><span class="sd">    description : str</span>
+<a id="__codelineno-0-379" name="__codelineno-0-379"></a><span class="sd">        Description of the command.</span>
+<a id="__codelineno-0-380" name="__codelineno-0-380"></a>
+<a id="__codelineno-0-381" name="__codelineno-0-381"></a><span class="sd">    Returns</span>
+<a id="__codelineno-0-382" name="__codelineno-0-382"></a><span class="sd">    -------</span>
+<a id="__codelineno-0-383" name="__codelineno-0-383"></a><span class="sd">    typing.Callable[..., commands.slash_commands.SlashCommand]</span>
+<a id="__codelineno-0-384" name="__codelineno-0-384"></a><span class="sd">        A [wyvern.commands.slash_commands.SlashCommand][] when called.</span>
+<a id="__codelineno-0-385" name="__codelineno-0-385"></a><span class="sd">    &quot;&quot;&quot;</span>
+<a id="__codelineno-0-386" name="__codelineno-0-386"></a>
+<a id="__codelineno-0-387" name="__codelineno-0-387"></a>    <span class="k">def</span> <span class="nf">inner</span><span class="p">(</span><span class="n">callback</span><span class="p">:</span> <span class="n">AppCommandCallbackT</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">commands</span><span class="o">.</span><span class="n">slash_commands</span><span class="o">.</span><span class="n">SlashCommand</span><span class="p">:</span>
+<a id="__codelineno-0-388" name="__codelineno-0-388"></a>        <span class="n">cmd</span> <span class="o">=</span> <span class="n">commands</span><span class="o">.</span><span class="n">as_slash_command</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="n">description</span><span class="p">)(</span><span class="n">callback</span><span class="p">)</span>
+<a id="__codelineno-0-389" name="__codelineno-0-389"></a>
+<a id="__codelineno-0-390" name="__codelineno-0-390"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">add_slash_command</span><span class="p">(</span><span class="n">cmd</span><span class="o">.</span><span class="n">_set_client</span><span class="p">(</span><span class="bp">self</span><span class="p">))</span>
+<a id="__codelineno-0-391" name="__codelineno-0-391"></a>        <span class="k">return</span> <span class="n">cmd</span>
+<a id="__codelineno-0-392" name="__codelineno-0-392"></a>
+<a id="__codelineno-0-393" name="__codelineno-0-393"></a>    <span class="k">return</span> <span class="n">inner</span>
 </code></pre></div></td></tr></table></div>
       </details>
   </div>

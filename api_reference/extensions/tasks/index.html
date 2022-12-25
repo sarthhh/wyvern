@@ -660,20 +660,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#wyvern.extensions.tasks.Task.delay" class="md-nav__link">
-    delay
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#wyvern.extensions.tasks.Task.is_running" class="md-nav__link">
-    is_running
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#wyvern.extensions.tasks.Task.trigger" class="md-nav__link">
     trigger
   </a>
@@ -681,8 +667,22 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#wyvern.extensions.tasks.Task.delay" class="md-nav__link">
+    delay
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#wyvern.extensions.tasks.Task.wait_until_complete" class="md-nav__link">
     wait_until_complete
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wyvern.extensions.tasks.Task.is_running" class="md-nav__link">
+    is_running
   </a>
   
 </li>
@@ -1194,20 +1194,6 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#wyvern.extensions.tasks.Task.delay" class="md-nav__link">
-    delay
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#wyvern.extensions.tasks.Task.is_running" class="md-nav__link">
-    is_running
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#wyvern.extensions.tasks.Task.trigger" class="md-nav__link">
     trigger
   </a>
@@ -1215,8 +1201,22 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#wyvern.extensions.tasks.Task.delay" class="md-nav__link">
+    delay
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#wyvern.extensions.tasks.Task.wait_until_complete" class="md-nav__link">
     wait_until_complete
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#wyvern.extensions.tasks.Task.is_running" class="md-nav__link">
+    is_running
   </a>
   
 </li>
@@ -1304,85 +1304,6 @@
 interval of time repeatedly.</p>
 
 
-        <details class="quote">
-          <summary>Source code in <code>wyvern/extensions/tasks.py</code></summary>
-          <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"><a href="#__codelineno-0-33">33</a></span>
-<span class="normal"><a href="#__codelineno-0-34">34</a></span>
-<span class="normal"><a href="#__codelineno-0-35">35</a></span>
-<span class="normal"><a href="#__codelineno-0-36">36</a></span>
-<span class="normal"><a href="#__codelineno-0-37">37</a></span>
-<span class="normal"><a href="#__codelineno-0-38">38</a></span>
-<span class="normal"><a href="#__codelineno-0-39">39</a></span>
-<span class="normal"><a href="#__codelineno-0-40">40</a></span>
-<span class="normal"><a href="#__codelineno-0-41">41</a></span>
-<span class="normal"><a href="#__codelineno-0-42">42</a></span>
-<span class="normal"><a href="#__codelineno-0-43">43</a></span>
-<span class="normal"><a href="#__codelineno-0-44">44</a></span>
-<span class="normal"><a href="#__codelineno-0-45">45</a></span>
-<span class="normal"><a href="#__codelineno-0-46">46</a></span>
-<span class="normal"><a href="#__codelineno-0-47">47</a></span>
-<span class="normal"><a href="#__codelineno-0-48">48</a></span>
-<span class="normal"><a href="#__codelineno-0-49">49</a></span>
-<span class="normal"><a href="#__codelineno-0-50">50</a></span>
-<span class="normal"><a href="#__codelineno-0-51">51</a></span>
-<span class="normal"><a href="#__codelineno-0-52">52</a></span>
-<span class="normal"><a href="#__codelineno-0-53">53</a></span>
-<span class="normal"><a href="#__codelineno-0-54">54</a></span>
-<span class="normal"><a href="#__codelineno-0-55">55</a></span>
-<span class="normal"><a href="#__codelineno-0-56">56</a></span>
-<span class="normal"><a href="#__codelineno-0-57">57</a></span>
-<span class="normal"><a href="#__codelineno-0-58">58</a></span>
-<span class="normal"><a href="#__codelineno-0-59">59</a></span>
-<span class="normal"><a href="#__codelineno-0-60">60</a></span>
-<span class="normal"><a href="#__codelineno-0-61">61</a></span>
-<span class="normal"><a href="#__codelineno-0-62">62</a></span>
-<span class="normal"><a href="#__codelineno-0-63">63</a></span>
-<span class="normal"><a href="#__codelineno-0-64">64</a></span>
-<span class="normal"><a href="#__codelineno-0-65">65</a></span>
-<span class="normal"><a href="#__codelineno-0-66">66</a></span>
-<span class="normal"><a href="#__codelineno-0-67">67</a></span>
-<span class="normal"><a href="#__codelineno-0-68">68</a></span>
-<span class="normal"><a href="#__codelineno-0-69">69</a></span>
-<span class="normal"><a href="#__codelineno-0-70">70</a></span></pre></div></td><td class="code"><div><pre><span></span><code><a id="__codelineno-0-33" name="__codelineno-0-33"></a><span class="nd">@attrs</span><span class="o">.</span><span class="n">define</span><span class="p">(</span><span class="n">kw_only</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">slots</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<a id="__codelineno-0-34" name="__codelineno-0-34"></a><span class="k">class</span> <span class="nc">Task</span><span class="p">:</span>
-<a id="__codelineno-0-35" name="__codelineno-0-35"></a>    <span class="sd">&quot;&quot;&quot;Represents a task that gets triggerd after some</span>
-<a id="__codelineno-0-36" name="__codelineno-0-36"></a><span class="sd">    interval of time repeatedly.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-37" name="__codelineno-0-37"></a>
-<a id="__codelineno-0-38" name="__codelineno-0-38"></a>    <span class="n">trigger</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Callable</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="n">typing</span><span class="o">.</span><span class="n">Awaitable</span><span class="p">[</span><span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">]]</span>
-<a id="__codelineno-0-39" name="__codelineno-0-39"></a>    <span class="sd">&quot;&quot;&quot;The coro to trigger at every interval.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-40" name="__codelineno-0-40"></a>    <span class="n">delay</span><span class="p">:</span> <span class="nb">float</span>
-<a id="__codelineno-0-41" name="__codelineno-0-41"></a>    <span class="sd">&quot;&quot;&quot;Time delay between triggers ( in seconds )&quot;&quot;&quot;</span>
-<a id="__codelineno-0-42" name="__codelineno-0-42"></a>    <span class="n">wait_until_complete</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span>
-<a id="__codelineno-0-43" name="__codelineno-0-43"></a>    <span class="sd">&quot;&quot;&quot;Weather to wait before one trigger is complete.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-44" name="__codelineno-0-44"></a>    <span class="n">is_running</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
-<a id="__codelineno-0-45" name="__codelineno-0-45"></a>    <span class="sd">&quot;&quot;&quot;True if the task is running.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-46" name="__codelineno-0-46"></a>
-<a id="__codelineno-0-47" name="__codelineno-0-47"></a>    <span class="k">def</span> <span class="nf">update_delay</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">delay</span><span class="p">:</span> <span class="nb">float</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<a id="__codelineno-0-48" name="__codelineno-0-48"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">delay</span> <span class="o">=</span> <span class="n">delay</span>
-<a id="__codelineno-0-49" name="__codelineno-0-49"></a>
-<a id="__codelineno-0-50" name="__codelineno-0-50"></a>    <span class="k">async</span> <span class="k">def</span> <span class="nf">_runner</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<a id="__codelineno-0-51" name="__codelineno-0-51"></a>        <span class="n">loop</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">get_event_loop</span><span class="p">()</span>
-<a id="__codelineno-0-52" name="__codelineno-0-52"></a>        <span class="k">while</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_running</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
-<a id="__codelineno-0-53" name="__codelineno-0-53"></a>            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">wait_until_complete</span> <span class="ow">is</span> <span class="kc">False</span><span class="p">:</span>
-<a id="__codelineno-0-54" name="__codelineno-0-54"></a>                <span class="n">loop</span><span class="o">.</span><span class="n">create_task</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">trigger</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">))</span>  <span class="c1"># type: ignore</span>
-<a id="__codelineno-0-55" name="__codelineno-0-55"></a>            <span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-0-56" name="__codelineno-0-56"></a>                <span class="k">await</span> <span class="bp">self</span><span class="o">.</span><span class="n">trigger</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-<a id="__codelineno-0-57" name="__codelineno-0-57"></a>            <span class="k">await</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">delay</span><span class="p">)</span>
-<a id="__codelineno-0-58" name="__codelineno-0-58"></a>
-<a id="__codelineno-0-59" name="__codelineno-0-59"></a>    <span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">:</span> <span class="n">typing</span><span class="o">.</span><span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<a id="__codelineno-0-60" name="__codelineno-0-60"></a>        <span class="sd">&quot;&quot;&quot;Starts the task.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-61" name="__codelineno-0-61"></a>        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_running</span> <span class="ow">is</span> <span class="kc">False</span><span class="p">:</span>
-<a id="__codelineno-0-62" name="__codelineno-0-62"></a>            <span class="bp">self</span><span class="o">.</span><span class="n">is_running</span> <span class="o">=</span> <span class="kc">True</span>
-<a id="__codelineno-0-63" name="__codelineno-0-63"></a>        <span class="k">else</span><span class="p">:</span>
-<a id="__codelineno-0-64" name="__codelineno-0-64"></a>            <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;The task is already running.&quot;</span><span class="p">)</span>
-<a id="__codelineno-0-65" name="__codelineno-0-65"></a>        <span class="n">loop</span> <span class="o">=</span> <span class="n">asyncio</span><span class="o">.</span><span class="n">get_event_loop</span><span class="p">()</span>
-<a id="__codelineno-0-66" name="__codelineno-0-66"></a>        <span class="n">loop</span><span class="o">.</span><span class="n">create_task</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_runner</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">*</span><span class="n">kwargs</span><span class="p">))</span>
-<a id="__codelineno-0-67" name="__codelineno-0-67"></a>
-<a id="__codelineno-0-68" name="__codelineno-0-68"></a>    <span class="k">def</span> <span class="nf">stop</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
-<a id="__codelineno-0-69" name="__codelineno-0-69"></a>        <span class="sd">&quot;&quot;&quot;Stops the task.&quot;&quot;&quot;</span>
-<a id="__codelineno-0-70" name="__codelineno-0-70"></a>        <span class="bp">self</span><span class="o">.</span><span class="n">is_running</span> <span class="o">=</span> <span class="kc">False</span>
-</code></pre></div></td></tr></table></div>
-        </details>
 
   
 
@@ -1393,48 +1314,6 @@ interval of time repeatedly.</p>
 
 
 
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h3 id="wyvern.extensions.tasks.Task.delay" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">delay</span><span class="p">:</span> <span class="nb">float</span></code>
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
-  </span>
-
-</h3>
-
-
-  <div class="doc doc-contents ">
-  
-      <p>Time delay between triggers ( in seconds )</p>
-  </div>
-
-</div>
-
-<div class="doc doc-object doc-attribute">
-
-
-
-<h3 id="wyvern.extensions.tasks.Task.is_running" class="doc doc-heading">
-<code class="highlight language-python"><span class="n">is_running</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span></code>
-  
-  <span class="doc doc-labels">
-      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
-  </span>
-
-</h3>
-
-
-  <div class="doc doc-contents ">
-  
-      <p>True if the task is running.</p>
-  </div>
-
-</div>
 
 <div class="doc doc-object doc-attribute">
 
@@ -1461,6 +1340,27 @@ interval of time repeatedly.</p>
 
 
 
+<h3 id="wyvern.extensions.tasks.Task.delay" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">delay</span><span class="p">:</span> <span class="nb">float</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Time delay between triggers ( in seconds )</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
 <h3 id="wyvern.extensions.tasks.Task.wait_until_complete" class="doc doc-heading">
 <code class="highlight language-python"><span class="n">wait_until_complete</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">True</span></code>
   
@@ -1474,6 +1374,27 @@ interval of time repeatedly.</p>
   <div class="doc doc-contents ">
   
       <p>Weather to wait before one trigger is complete.</p>
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="wyvern.extensions.tasks.Task.is_running" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">is_running</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>True if the task is running.</p>
   </div>
 
 </div>
